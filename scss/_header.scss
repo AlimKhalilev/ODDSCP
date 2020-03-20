@@ -12,6 +12,35 @@ body {
     font-weight: 700;
 }
 
+.mt-20 {
+    margin-top: -20px;
+}
+
+.ripple {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    transform: scale(0);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: fixed;
+}
+
+.animate {
+    animation: ripple-mo 1s cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes ripple-mo {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+
 .selectric {
     border: none;
     border-radius: 7px;
@@ -68,6 +97,12 @@ body {
                 font-size: 21px;
                 font-weight: 600;
                 color: #fff;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #e47f26;
+                }
             }
         }
 

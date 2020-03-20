@@ -66,11 +66,83 @@
     background-color: $color_bg_dark;
 
     .section-inner {
-        padding-top: 30px;
+        padding: 30px 0 200px 0;
     }
 
     &-header {
         margin-bottom: 100px;
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 60px 30px;
+
+        &-card {
+            border-radius: 9px;
+            border: 1px solid #707070;
+            min-height: 400px;
+            padding: 30px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &:hover {
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
+                background-color: #1b1d28;
+                border: none;
+            }
+
+            &-top {
+
+                &-icon {
+                    h2 {
+                        font-size: 65px;
+                        font-weight: 700;
+                        letter-spacing: 2.27px;
+                        line-height: 77px;
+                    }
+                }
+    
+                &-header {
+                    h3 {
+                        font-size: 30px;
+                        font-weight: 700;
+                        letter-spacing: -0.81px;
+                        line-height: 38px;
+                        margin: 20px 0;
+                    }
+                }
+    
+                &-text {
+                    p {
+                        font-size: 17px;
+                        font-weight: 500;
+                        letter-spacing: 0.25px;
+                        line-height: 30px;
+                        opacity: 0.9;
+                    }
+                }
+            }
+
+            &-bottom {
+                display: flex;
+
+                span {
+                    color: #fc8b2b;
+                    font-size: 17px;
+                    font-weight: 700;
+                    letter-spacing: 0.22px;
+                    line-height: 30px;
+                    margin-right: 15px;
+                }
+
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
 
