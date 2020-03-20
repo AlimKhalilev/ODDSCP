@@ -1,5 +1,77 @@
 @import "normalize";
 @import "colors";
 @import "grid";
+@import "selectric";
 @import "header";
 @import "footer";
+
+// === Promo ===
+
+.section-promo {
+    background-image: url(/dist/img/promo_background-1.svg);
+    min-height: 900px;
+    background-position: 50% -150px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-color: $color_bg_dark;
+
+    .section-inner {
+        display: flex;
+    }
+
+    &-description {
+
+        &-text {
+            color: #fff;
+            margin-top: 140px;
+
+            h1 {
+                font-size: 67px;
+                font-weight: 700;
+                letter-spacing: 0.07px;
+                line-height: 71px;
+            }
+
+            h2 {
+                margin: 25px 0 50px 0;
+                font-size: 42px;
+                font-weight: 700;
+                letter-spacing: 1.47px;
+                line-height: 48px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: -0.8px;
+                line-height: 45px;
+            }
+        }
+
+        &-info {
+            margin-top: 75px;
+        }
+    }
+
+    &-img {
+
+    }
+}
+
+// === / Promo ===
+
+// === Facts ===
+
+.section-facts {
+    background-color: $color_bg_dark;
+
+    .section-inner {
+        padding-top: 30px;
+    }
+
+    &-header {
+        margin-bottom: 100px;
+    }
+}
+
+// === / Facts ===

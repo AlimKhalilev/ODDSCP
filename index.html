@@ -4,12 +4,97 @@
 	<meta charset="UTF-8">
 	<title>ODDSCP | Frontend</title>
 	<link rel="stylesheet" href="dist/css/style.min.css">
+	<link rel="stylesheet" href="dist/css/style.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 
+	<header class="section-outer section-header">
+		<div class="section-inner">
+			<div class="section-header-logo">
+				<a href="#">
+					<img src="dist/img/logo.png" alt="Логотип">
+				</a>
+			</div>
+			<nav class="section-header-nav">
+				<ul>
+					<li><a class="header_a" href="#">Стоимость</a></li>
+					<li><a class="header_a" href="#">Live DEMO</a></li>
+					<li><a class="header_a" href="#">Документация</a></li>
+					<li><a class="header_a" href="#">Вопросы</a></li>
+					</li>
+				</ul>
+			</nav>
+			<div class="section-header-language">
+				<select name="change_language" id="select_language">
+					<option value="1">Русский</option>
+					<option value="2">English</option>
+				</select>
+			</div>
+			<div class="section-header-auth">
+				<img src="dist/img/account.svg" alt="Аккаунт лого">
+				<a class="header_a" href="#">Войти</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="section-outer section-promo">
+		<div class="section-inner">
+			<div class="section-promo-description">
+				<div class="section-promo-description-text">
+					<h1>API для парсинга спортивных событий.</h1>
+					<h2>Live и вилки</h2>
+					<p>Предоставляем данные для автоматизации ставок. 95% событиий получаем менее, чем за <br>1 секуду. 
+						Сервис создавался для себя и круга знакомых. При достижении 500 клиентов 
+						сервис будет закрыт для продажи, для исключения конкуренции и внимания со стороны БК.
+					</p>
+				</div>
+				<div class="section-promo-description-info reg_card">
+					<div class="reg_card-container">
+						<div class="reg_card-container-button">
+							<button>Регистрация</button>
+						</div>
+						<div class="reg_card-container-content">
+							<h3>123<span>/500</span></h3>
+							<p>Активных клиентов</p>
+						</div>
+					</div>
+					<div class="reg_card-subtitle">
+						<p>* Продажа API ключа будет прекращена</p>
+					</div>
+				</div>
+			</div>
+			<div class="section-promo-img">
+				<img src="dist/img/player.webp" alt="Игрок">
+			</div>
+		</div>
+	</main>
+
+	<section class="section-outer section-facts">
+		<div class="section-inner">
+			<h1 class="section-facts-header section_header">Факты об API ODDSCP</h1>
+			<div class="section-facts-cards">
+				<div class="section-facts-cards-card">
+					<div class="section-facts-cards-card-icon">
+						<img src="dist/img/facts-icon-1.svg" alt="Факты иконка 1">
+					</div>
+					<div class="section-facts-cards-card-icon-header">
+						<h3>0,4 секунды</h3>
+					</div>
+					<div class="section-facts-cards-card-text">
+						<p>Среднее время обновления данных. 95% данных не превышают 1 секунды</p>
+					</div>
+					<div class="section-facts-cards-card-button">
+						<img src="dist/img/facts-icon-arrow.svg" alt="Иконка стрелочки">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/selectric.min.js"> </script>
 	<script src="dist/js/script.min.js"></script>
 </body>
 </html>
