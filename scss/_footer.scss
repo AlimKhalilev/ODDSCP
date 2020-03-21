@@ -1,4 +1,88 @@
 // === Footer ===
 
+.section-footer {
+    padding: 45px 0;
+    background-color: $color_bg_light;
+    border-top: 1px solid $color_header_border;
+
+    .section-inner {
+
+    }
+
+    &-top {
+        display: flex;
+        align-items: center;
+
+        &-logo {
+
+        }
+
+        &-nav {
+            margin: 0 auto 0 90px;
+
+            ul {
+                display: flex;
+
+                li {
+                    &:not(:last-child) {
+                        margin-right: 40px;
+                    }
+
+                    a {
+                        position: relative;
+
+                        &:hover {
+                            &::after {
+                                transform: scale(1);
+                            }
+                        }
+    
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            background-color: #fff;
+                            height: 2px;
+                            transform: scale(0);
+                            transition: all 0.3s ease;
+                            bottom: -8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-links {
+        margin: 45px 0;
+
+        ul {
+            display: flex;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+
+                a {
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        p {
+            color: #4d5567;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            line-height: 30px;
+        }
+    }
+}
 
 // === / Footer ===

@@ -23,11 +23,10 @@
 					<li><a class="header_a" href="#">Live DEMO</a></li>
 					<li><a class="header_a" href="#">Документация</a></li>
 					<li><a class="header_a" href="#">Вопросы</a></li>
-					</li>
 				</ul>
 			</nav>
 			<div class="section-header-language">
-				<select name="change_language" id="select_language">
+				<select name="change_language" class="select_language">
 					<option value="1">Русский</option>
 					<option value="2">English</option>
 				</select>
@@ -390,6 +389,115 @@
 				<div class="table_item table_item_checked_odd"></div>
 			</div>
 		</div>
+	</section>
+
+	<section class="section-outer section-integration">
+		<div class="section-inner">
+			<h1 class="section-integration-header section_header">Простота внедрения</h1>
+			<h2 class="section-integration-subheader">Для интеграции достаточно всего абзац кода</h2>
+			<div class="section-integration-content">
+				<div class="section-integration-content-tabs">
+					<span>Html</span>
+					<span>Python</span>
+					<span class="active">C++</span>
+					<span>Java</span>
+					<span>PHP</span>
+				</div>
+				<div class="section-integration-content-container">
+					<div class="section-integration-content-container-text">
+<pre>
+int main()
+{  
+	std::string user_name = «user»; //
+	std::cout << «Hello, « << user_name << «!» << std::endl;
+	
+	user_name = «The Great Whale»; //
+	std::cout << «I am « << user_name;
+	return EXIT_SUCCESS; //	
+</pre>
+					</div>
+					<div class="section-integration-content-container-button">
+						<button id="copy_text">Скопировать</button>
+					</div>
+				</div>
+			</div>
+			<div class="section-integration-bottom">
+				<p>С интеграцией сможет справиться программист с опытом от 1 года. <br>Для интеграции разработана подробная <a href="#">документация</a>.</p>
+				<p>* В случае возникновения сложностей наша <a href="#">тех. поддержка</a> поможет оперативно решить вопрос.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-join_footer">
+		<section class="section-outer section-join">
+			<div class="section-inner">
+				<div class="section-join-header">
+					<div class="section-join-header-main">
+						<h1>124/5</h1>
+						<img src="dist/img/ball.webp" alt="Мяч">
+						<img src="dist/img/ball.webp" alt="Мяч">
+					</div>
+					<h2 class="section-join-header-bottom">Доступных мест для клиентов</h2>
+				</div>
+				<div class="section-join-description">
+					<p>Меньше участников –  выше доходность по ставкам, <br>т.к. меньше конкуренция.</p>
+					<p>Формат закрытого клуба позволяет не привлекать внимание букмекерских <br>контор, что увеличивает надежность и долгосрочность работы парсера.</p>
+				</div>
+	
+				<div class="section-join-bottom">
+					<div class="reg_card">
+						<div class="reg_card-container">
+							<div class="reg_card-container-button">
+								<button>Регистрация</button>
+							</div>
+							<div class="reg_card-container-content">
+								<h3>123<span>/500</span></h3>
+								<p>Активных клиентов</p>
+							</div>
+						</div>
+						<div class="reg_card-subtitle">
+							<p>* Продажа API ключа будет прекращена</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<footer class="section-outer section-footer">
+			<div class="section-inner">
+				<div class="section-footer-top">
+					<div class="section-footer-top-logo">
+						<a href="#">
+							<img src="dist/img/logo.png" alt="Логотип">
+						</a>
+					</div>
+					<nav class="section-footer-top-nav">
+						<ul>
+							<li><a class="header_a" href="#">Стоимость</a></li>
+							<li><a class="header_a" href="#">Live DEMO</a></li>
+							<li><a class="header_a" href="#">Документация</a></li>
+							<li><a class="header_a" href="#">Вопросы</a></li>
+						</ul>
+					</nav>
+					<div class="section-footer-top-language">
+						<select name="change_language" class="select_language">
+							<option value="1">Русский</option>
+							<option value="2">English</option>
+						</select>
+					</div>
+				</div>
+				<div class="section-footer-links">
+					<ul>
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Оферта ODDSCP</a></li>
+						<li><a href="#">Тех. поддержка</a></li>
+					</ul>
+				</div>
+				<div class="section-footer-bottom">
+					<p>ODDSCP - Api спортивных событий<br>© 2019 – 2020 ODDSCP</p>
+				</div>
+			</div>
+		</footer>
 	</section>
 
 	<script src="dist/js/jquery.min.js"></script>

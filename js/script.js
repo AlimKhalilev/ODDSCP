@@ -1,9 +1,20 @@
 $(document).ready(function() {
     $(".ripple_button").click(drawRipple);
+    $("#copy_text").click(function() {
+        var $temp = $("<input>");
+	    $("body").append($temp);
+	    $temp.val($('.section-integration-content-container-text').text()).select();
+	    document.execCommand("copy");
+	    $temp.remove();
+        $(this).text('Текст скопирован!');
+        setTimeout(function() {
+            $("#copy_text").text('Скопировать');
+        }, 2000);
+    });
 });
 
 $(function() {
-    $('#select_language').selectric();
+    $('.select_language').selectric();
 });
 
 //Ripple Event Handler

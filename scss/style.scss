@@ -152,7 +152,7 @@
 
 .section-about {
     padding: 100px 0 180px 0;
-    background-color: $color_bg_light_two;
+    background-color: $color_bg_light;
 
     .section-inner {
         display: flex;
@@ -163,7 +163,7 @@
     }
 
     &-content {
-        margin-left: 30px;
+        margin-left: 70px;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -227,7 +227,7 @@
 // === Bookmakers ===
 
 .section-bookmakers {
-    background-color: $color_bg_light_two;
+    background-color: $color_bg_light;
 
     .section-inner {
 
@@ -282,7 +282,7 @@
         button {
             border: 1px solid #fff;
             border-radius: 14px;
-            background-color: $color_bg_light_two;
+            background-color: $color_bg_light;
             color: #fff;
             font-size: 19px;
             font-weight: 700;
@@ -297,7 +297,7 @@
 // === Sport ===
 
 .section-sport {
-    background-color: $color_bg_light_two;
+    background-color: $color_bg_light;
     padding: 150px 0 120px 0;
 
     .section-inner {
@@ -359,3 +359,200 @@
 }
 
 // === / Markets ===
+
+// === Integration ===
+
+.section-integration {
+    background-color: $color_bg_light_two;
+    padding: 100px 0 140px 0;
+
+    .section-inner {
+
+    }
+
+    &-subheader {
+        font-size: 35px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        margin: 25px 0 60px 0;
+    }
+
+    &-content, &-bottom {
+        width: 1050px;
+        margin: 0 auto;
+    }
+
+    &-content {
+
+        &-tabs {
+            padding: 0 60px;
+
+            span {
+                position: relative;
+                font-size: 22px;
+                font-weight: 400;
+                color: $color_integration_tabs;
+                letter-spacing: 0.77px;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-right: 50px;
+                }
+
+                &:hover {
+                    font-weight: 700;
+                    color: #fff;
+                }
+
+                &.active {
+                    font-weight: 700;
+                    color: #fc8b2b;
+
+                    &::after {
+                        content: "▲";
+                        position: absolute;
+                        bottom: -35px;
+                        color: $color_integration_container;;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+                }
+            }
+        }
+
+        &-container {
+            background-color: $color_integration_container;
+            border-radius: 12px;
+            margin: 30px 0 85px 0;
+            padding: 30px 45px;
+            display: flex;
+            justify-content: space-between;
+
+            &-text {
+                pre {
+                    font-family: 'Montserrat', sans-serif;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.63px;
+                    line-height: 30px;
+                    margin: 0;
+                }
+            }
+
+            &-button {
+
+                button {
+                    border-radius: 9px;
+                    border: 1px solid #585d62;
+                    background-color: $color_integration_container;
+                    color: #585d62;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 12px 56px 12px 20px;
+                    position: relative;
+                    cursor: pointer;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: 16px;
+                        background-image: url(/dist/img/copy-icon.svg);
+                        width: 20px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        color: #71788d;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 28px;
+
+        p {
+            a {
+                color: #71788d;
+                font-weight: 700;
+            }
+
+            &:first-child {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+// === / Integration ===
+
+// === Join ===
+
+.section-join {
+    padding: 190px 0 260px 0;
+    color: #fff;
+
+    .section-inner {
+
+    }
+
+    &_footer {
+        background-color: $color_bg_light;
+        background-image: url(/dist/img/baseball.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+
+        .section-footer {
+            background-color: transparent;
+        }
+    }
+
+    &-header {
+
+        &-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 210px;
+                font-weight: 700;
+                letter-spacing: 2.09px;
+                margin: 0 15px;
+            }
+        }
+
+        &-bottom {
+            font-size: 55px;
+            font-weight: 700;
+            letter-spacing: 2.09px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+    }
+
+    &-description {
+        margin: 50px 0 100px 0;
+
+        p {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 0.46px;
+            line-height: 30px;
+            text-align: center;
+
+            &:first-child {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    &-bottom {
+        text-align: center;
+    }
+}
+
+// === / Join ===
