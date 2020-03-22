@@ -1,0 +1,170 @@
+@import "normalize";
+@import "colors";
+@import "grid";
+@import "selectric";
+@import "mixins";
+@import "modal";
+@import "header";
+@import "footer";
+
+// === Demo ===
+
+.section-demo {
+    background-color: $color_bg_dark;
+    background-image: url(/dist/img/promo_background-1.svg);
+    min-height: 900px;
+    background-position: 50% -350px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+
+    color: #fff;
+    padding: 80px 0;
+
+    .section-inner {
+
+    }
+
+    &-top, &-bottom {
+        &-header {
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: 1.75px;
+        }
+    
+        &-subheader {
+            font-size: 21px;
+            font-weight: 500;
+            margin: 30px 0 50px 0;
+            line-height: 35px;
+        }
+    }
+
+    &-top {
+        &-container {
+            display: flex;
+            background-color: $color_faq_item_open;
+            border-radius: 8px;
+            padding: 25px;
+
+            &-menu {
+                display: grid;
+                row-gap: 15px;
+                margin-right: 20px;
+                padding-right: 20px;
+                border-right: 1px solid #4a505e;
+                flex-basis: 30%;
+
+                button {
+                    border: none;
+                    background-color: #404859;
+                    border-radius: 8px;
+                    font-size: 19px;
+                    font-weight: 700;
+                    padding: 22px 0;
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                img {
+                    min-width: 100%;
+                }
+
+                .selectric {
+                    border: 1px solid #545a67;
+                    background-color: $color_faq_item_open;
+
+                    &-items {
+                        background-color: #5a617a;
+
+                        li {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .label {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            &-content {
+                flex-basis: 70%;
+
+                &-title {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h1 {
+                        font-size: 21px;
+                        font-weight: 700;
+                        letter-spacing: 0.27px;
+                    }
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+
+                &-tags {
+                    margin: 30px 0;
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(100px, min-content));
+                    grid-gap: 25px 50px;
+
+                    span {
+                        display: flex;
+                        white-space: nowrap;
+                        font-size: 18px;
+
+                        b {
+                            margin-right: 5px;
+                            color: #777e8e;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                &-table {
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.25px;
+
+                    &-item {
+                        display: flex;
+
+                        span {
+                            width: 4%;
+
+                            &:first-child {
+                                width: 96%;
+                                display: flex;
+                                align-items: center;
+                                white-space: nowrap;
+                                margin-right: 15px;
+
+                                &::after {
+                                    content: '';
+                                    height: 1px;
+                                    margin-left: 15px;
+                                    background-color: #4a505e;
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+
+    }
+
+}
+
+// === / Demo ===

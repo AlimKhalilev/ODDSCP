@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ODDSCP | Frontend</title>
-	<link rel="stylesheet" href="dist/css/style-404.min.css">
+	<link rel="stylesheet" href="dist/css/style-demo.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
@@ -18,10 +18,10 @@
 			</div>
 			<nav class="section-header-nav">
 				<ul>
-					<li><a class="header_a" href="/cost.html">Стоимость</a></li>
-					<li><a class="header_a" href="/demo.html">Live DEMO</a></li>
-					<li><a class="header_a" href="#">Документация</a></li>
-					<li><a class="header_a" href="/faq.html">Вопросы</a></li>
+                    <li><a class="header_a" href="/cost.html">Стоимость</a></li>
+                    <li><a class="header_a active" href="/demo.html">Live DEMO</a></li>
+                    <li><a class="header_a" href="#">Документация</a></li>
+                    <li><a class="header_a" href="/faq.html">Вопросы</a></li>
 				</ul>
 			</nav>
 			<div class="section-header-language">
@@ -37,12 +37,72 @@
 		</div>
     </header>
     
-    <section class="section-outer section-404">
+    <section class="section-outer section-demo">
         <div class="section-inner">
-            <img src="dist/img/404.svg" alt="404 изображение">
-            <h1>Страница не найдена</h1>
-            <h2>но за это время мы нашли 1 529 событий. Заработайте на этом</h2>
-            <a href="/">Вернуться на сайт</a>
+            <div class="section-demo-top">
+                <h1 class="section-demo-top-header">Live DEMO</h1>
+                <h3 class="section-demo-top-subheader">Проверьте корректность работы нашего сервиса.
+                    <br>Выберете БК и нужный матч, сравните с данными в своей БК.
+                    <br>Представлены данные по 200 случайным событиям.
+                </h3>
+                <div class="section-demo-top-container">
+                    <div class="section-demo-top-container-menu">
+                        <select class="section-demo-top-container-menu-select">
+                            <option value="1">FONBET</option>
+                            <option value="2">1xBET</option>
+                            <option value="3">2xBET</option>
+                        </select>
+                        <select class="section-demo-top-container-menu-select">
+                            <option value="1">Футбол. Италия. Серия А</option>
+                            <option value="2">Футбол. Италия. Серия B</option>
+                        </select>
+                        <select class="section-demo-top-container-menu-select">
+                            <option value="1">Ювентус – Милан</option>
+                            <option value="2">Ювентус – Интер</option>
+                        </select>
+                        <img src="dist/img/recapcha-2.webp" alt="Рекапча">
+                        <button>Сравнить данные</button>
+                    </div>
+                    <div class="section-demo-top-container-content">
+                        <div class="section-demo-top-container-content-title">
+                            <h1>Данные парсера ODDSCP</h1>
+                            <img src="dist/img/refresh-icon.svg" alt="Сбросить">
+                        </div>
+                        <div class="section-demo-top-container-content-tags">
+                            <span><b>Букмекер: </b>fonbet</span>
+                            <span><b>Матч:</b>Ювентус vs Милан</span>
+                            <span><b>Вид спорта:</b>soccer</span>
+                            <span><b>Текущий счет:</b>0:1 (0:1) 64:55</span>
+                        </div>
+                        <div class="section-demo-top-container-content-table">
+                            <div class="section-demo-top-container-content-table-item">
+                                <span>1. WIN_P2</span>
+                                <span>1.5</span>
+                            </div>
+                            <div class="section-demo-top-container-content-table-item">
+                                <span>2. WIN_1X</span>
+                                <span>2.6</span>
+                            </div>
+                            <div class="section-demo-top-container-content-table-item">
+                                <span>3. HANDICAP_P1(1.5)</span>
+                                <span>11.4</span>
+                            </div>
+                            <div class="section-demo-top-container-content-table-item">
+                                <span>4. HANDICAP_P2(-1.5)</span>
+                                <span>7.1</span>
+                            </div>
+                            <div class="section-demo-top-container-content-table-item">
+                                <span>5. TOTALS_UNDER(1.5)</span>
+                                <span>0.5</span>
+                            </div>
+                            <div class="section-demo-top-container-content-table-item">
+                                <span>6. TOTALS_OVER(1.5)</span>
+                                <span>0.85</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -57,7 +117,7 @@
                 <nav class="section-footer-top-nav">
                     <ul>
                         <li><a class="header_a" href="/cost.html">Стоимость</a></li>
-                        <li><a class="header_a" href="/demo.html">Live DEMO</a></li>
+                        <li><a class="header_a active" href="/demo.html">Live DEMO</a></li>
                         <li><a class="header_a" href="#">Документация</a></li>
                         <li><a class="header_a" href="/faq.html">Вопросы</a></li>
                     </ul>
@@ -154,7 +214,8 @@
 
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/selectric.min.js"> </script>
-	<script src="dist/js/script-main.min.js"></script>
+    <script src="dist/js/script-main.min.js"></script>
+    <script src="dist/js/script-demo.min.js"></script>
 
     </body>
 </html>

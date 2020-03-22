@@ -20,7 +20,7 @@
 
     .section-inner {
         display: grid;
-        grid-row-gap: 40px;
+        row-gap: 40px;
 
         img, h1, h2, a {
             justify-self: center;

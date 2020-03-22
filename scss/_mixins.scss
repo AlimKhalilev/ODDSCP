@@ -117,6 +117,8 @@ body {
         overflow: hidden;
         margin-top: 3px;
         border: none;
+        background-color: #5a617a;
+        box-shadow: none;
 
         li {
             padding: 15px 20px;
@@ -128,9 +130,13 @@ body {
                 color: #fff;
             }
 
+            &.selected {
+                background-color: #7680a4;
+            }
+
             &:nth-child(even) {
                 border-bottom: none;
-                border-top: 1px solid #929395;
+                border-top: none;
             }
         }
     }
