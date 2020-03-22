@@ -37,7 +37,7 @@
                     align-items: center;
                     position: relative;
 
-                    &:hover {
+                    &:hover, &.active {
                         &::after {
                             transform: scale(1);
                         }
@@ -73,6 +73,10 @@
 
         img {
             margin-right: 25px;
+        }
+
+        button {
+            cursor: pointer;
         }
     }
 }

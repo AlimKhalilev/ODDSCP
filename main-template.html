@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ODDSCP | Frontend</title>
+	<link rel="stylesheet" href="dist/css/style.min.css">
+	<link rel="stylesheet" href="dist/css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+	<header class="section-outer section-header">
+		<div class="section-inner">
+			<div class="section-header-logo">
+				<a href="#">
+					<img src="dist/img/logo.png" alt="Логотип">
+				</a>
+			</div>
+			<nav class="section-header-nav">
+				<ul>
+					<li><a class="header_a" href="/cost.html">Стоимость</a></li>
+					<li><a class="header_a" href="#">Live DEMO</a></li>
+					<li><a class="header_a" href="#">Документация</a></li>
+					<li><a class="header_a" href="/faq.html">Вопросы</a></li>
+				</ul>
+			</nav>
+			<div class="section-header-language">
+				<select name="change_language" class="select_language">
+					<option value="1">Русский</option>
+					<option value="2">English</option>
+				</select>
+			</div>
+			<div class="section-header-auth">
+				<img src="dist/img/account.svg" alt="Аккаунт лого">
+				<button class="auth header_a">Войти</button>
+			</div>
+		</div>
+	</header>
+
+    <footer class="section-outer section-footer">
+        <div class="section-inner">
+            <div class="section-footer-top">
+                <div class="section-footer-top-logo">
+                    <a href="#">
+                        <img src="dist/img/logo.png" alt="Логотип">
+                    </a>
+                </div>
+                <nav class="section-footer-top-nav">
+                    <ul>
+                        <li><a class="header_a" href="#">Стоимость</a></li>
+                        <li><a class="header_a" href="#">Live DEMO</a></li>
+                        <li><a class="header_a" href="#">Документация</a></li>
+                        <li><a class="header_a" href="#">Вопросы</a></li>
+                    </ul>
+                </nav>
+                <div class="section-footer-top-language">
+                    <select name="change_language" class="select_language">
+                        <option value="1">Русский</option>
+                        <option value="2">English</option>
+                    </select>
+                </div>
+            </div>
+            <div class="section-footer-links">
+                <ul>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Оферта ODDSCP</a></li>
+                    <li><a href="#">Тех. поддержка</a></li>
+                </ul>
+            </div>
+            <div class="section-footer-bottom">
+                <p>ODDSCP - Api спортивных событий<br>© 2019 – 2020 ODDSCP</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <div class="modal-form modal-auth">
+        <div class="modal-form-title">
+            <h2>Авторизация</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <form action="#" class="modal-form-area">
+            <input type="email" placeholder="Почта">
+            <input type="password" placeholder="Пароль">
+            <div class="modal-form-area-buttons">
+                <input type="submit" value="Войти">
+                <button name="back_reset">Забыли пароль?</button>
+                <span class="reset"></span>
+            </div>
+            <button name="back_reg" class="modal-form-area-button">+ Создать аккаунт</button>
+        </form>
+    </div>
+
+    <div class="modal-form modal-reg">
+        <div class="modal-form-title">
+            <h2>Регистрация</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <form action="#" class="modal-form-area">
+            <input type="email" placeholder="Почта">
+            <input type="text" placeholder="Пароль">
+            <input type="text" placeholder="Повторите пароль">
+            <img src="dist/img/recapcha.webp" alt="Рекапча">
+            <div class="modal-form-area-checkbox">
+                <label class="container">Согласен с правилами сервиса и <br>политикой конфиденциальности 
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <input class="modal-form-area-submit" type="submit" value="+ Создать аккаунт">
+        </form>
+    </div>
+
+    <div class="modal-form modal-reset">
+        <div class="modal-form-title">
+            <h2>Восстановление пароля</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <form action="#" class="modal-form-area">
+            <input type="email" placeholder="Почта">
+            <div class="modal-form-area-success">
+                <img src="dist/img/checkbox-green.svg" alt="Чекбокс галочка">
+                <p>Сообщение отправлено вам на почту</p>
+            </div>
+            <button class="modal-form-area-button">Отправить</button>
+            <button name="back_auth" class="modal-form-area-submit">Войти</button>
+            <button name="back_reg" class="modal-form-area-button">+ Создать аккаунт</button>
+        </form>
+    </div>
+
+    <div class="modal-form modal-fact">
+        <div class="modal-form-title">
+            <h2>138 280</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <div class="modal-form-area">
+            <h3>Событый ежемесячно анализируется сервисом</h3>
+            <p class="modal-fact-text">На данный момент парсер ODDSCP подключен к 10 БК России и других стран. Постоянно ведется работа по добавлению новых БК.<br><br>
+            Мы прислушиваемся к мнению наших клиентов. Вы можете выбрать, какую БК хотели бы видеть, или предложить свою.</p>
+            <button class="modal-form-area-button">Понятно</button>
+        </div>
+    </div>
+
+
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/selectric.min.js"> </script>
+	<script src="dist/js/script-main.min.js"></script>
+	<script src="dist/js/script.min.js"></script>
+
+    </body>
+</html>
