@@ -1,0 +1,55 @@
+@import "normalize";
+@import "colors";
+@import "grid";
+@import "selectric";
+@import "mixins";
+@import "modal";
+@import "header";
+@import "footer";
+
+// === 404 ===
+
+.section-404 {
+    background-color: $color_bg_dark;
+    background-image: url(/dist/img/promo_background-1.svg);
+    background-position: 50% -420px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 90px 0 50px 0;
+
+    .section-inner {
+        display: grid;
+        grid-row-gap: 40px;
+
+        img, h1, h2, a {
+            justify-self: center;
+        }
+
+        img {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 27px;
+            font-weight: 500;
+        }
+
+        a {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: #3e4657;
+            padding: 20px 45px;
+            border-radius: 10px;
+        }
+    }
+}
+
+// === / 404 ===
