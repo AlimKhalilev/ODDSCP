@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ODDSCP | Frontend</title>
+	<link rel="stylesheet" href="dist/css/style-cost.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+	<header class="section-outer section-header">
+		<div class="section-inner">
+			<div class="section-header-logo">
+				<a href="#">
+					<img src="dist/img/logo.png" alt="Логотип">
+				</a>
+			</div>
+			<nav class="section-header-nav">
+				<ul>
+					<li><a class="header_a active" href="/cost.html">Стоимость</a></li>
+					<li><a class="header_a" href="#">Live DEMO</a></li>
+					<li><a class="header_a" href="#">Документация</a></li>
+					<li><a class="header_a" href="/faq.html">Вопросы</a></li>
+				</ul>
+			</nav>
+			<div class="section-header-language">
+				<select name="change_language" class="select_language">
+					<option value="1">Русский</option>
+					<option value="2">English</option>
+				</select>
+			</div>
+			<div class="section-header-auth">
+				<img src="dist/img/account.svg" alt="Аккаунт лого">
+				<button class="auth header_a">Войти</button>
+			</div>
+		</div>
+    </header>
+    
+    <section class="section-outer section-cost">
+        <div class="section-inner">
+            <h1 class="section-cost-header">Стоимость</h1>
+            <h3 class="section-cost-subheader">Зависит от типа данных, частоты запросов и от срока оплаты.<br>Цены указаны за 1 месяц.</h3>
+            <div class="section-cost-tabs">
+                <div class="section-cost-tabs-tab">
+                    <span class="active">1 месяц</span>
+                </div>
+                <div class="section-cost-tabs-tab">
+                    <span>3 месяца <b>-15%</b></span>
+                </div>
+                <div class="section-cost-tabs-tab">
+                    <span>6 месяцев <b>-20%</b></span>
+                </div>
+                <div class="section-cost-tabs-tab">
+                    <span>12 месяцев <b>-25%</b></span>
+                </div>
+            </div>
+            <div class="section-cost-area">
+                <div class="section-cost-area-container">
+                    <div class="section-cost-area-container-header">
+                        <h4 class="section-cost-area-container-header-title">Live вилки</h4>
+                        <div name="tooltip_open" class="section-cost-area-container-header-question">
+                            <span>?</span>
+                            <div class="section-cost-area-container-header-question-tooltip">
+                                <p>Информационный текст с <br>разъяснением функций</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-cost-area-container-table">
+                        <div class="table_item title odd">Частота <br>запроса</div>
+                        <div class="table_item title">HTTP API <br>1 сек.</div>
+                        <div class="table_item title odd">HTTP API <br>3 сек.</div>
+                        <div class="table_item title">HTTP API <br>10 сек.</div> 
+
+                        <div class="table_item odd">2 БК</div>
+                        <div class="table_item">$100</div>
+                        <div class="table_item odd">$80</div>
+                        <div class="table_item">$100</div>
+
+                        <div class="table_item odd">3 БК</div>
+                        <div class="table_item">$120</div>
+                        <div class="table_item odd">$50</div>
+                        <div class="table_item">$70</div>
+
+                        <div class="table_item odd">5 БК</div>
+                        <div class="table_item">$150</div>
+                        <div class="table_item odd">$130</div>
+                        <div class="table_item">$100</div>
+
+                        <div class="table_item odd">Все БК</div>
+                        <div class="table_item">$300</div>
+                        <div class="table_item odd">$250</div>
+                        <div class="table_item">$180</div>
+                    </div>
+                    <div class="section-cost-area-container-description">
+                        <p>Минимальный % вилки по всем тарифам: 0%<br>Возможно уменьшение значения до -3%, в индивидуальном порядке.
+                            <br>Для подробностей - свяжитесь с менеджером</p>
+                    </div>
+                    <div class="section-cost-area-container-button">
+                        <button>Подключить Live вилки</button>
+                    </div>
+                </div>
+                <div class="section-cost-area-container">
+                    <div class="section-cost-area-container-header">
+                        <h4 class="section-cost-area-container-header-title">Live коэффициенты</h4>
+                        <div name="tooltip_open" class="section-cost-area-container-header-question">
+                            <span>?</span>
+                            <div class="section-cost-area-container-header-question-tooltip">
+                                <p>Информационный текст с <br>разъяснением функций</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-cost-area-container-table">
+                        <div class="table_item title odd">Частота <br>запроса</div>
+                        <div class="table_item title">HTTP API <br>1 сек.</div>
+                        <div class="table_item title odd">HTTP API <br>3 сек.</div>
+                        <div class="table_item title">HTTP API <br>10 сек.</div>
+
+                        <div class="table_item odd">1 БК</div>
+                        <div class="table_item">$100</div>
+                        <div class="table_item odd">$80</div>
+                        <div class="table_item long">По <br>договорен-<br>ности</div>
+
+                        <div class="table_item odd">2 БК</div>
+                        <div class="table_item">$100</div>
+                        <div class="table_item odd">$80</div>
+
+                        <div class="table_item odd">3 БК</div>
+                        <div class="table_item">$120</div>
+                        <div class="table_item odd">$50</div>
+
+                        <div class="table_item odd">5 БК</div>
+                        <div class="table_item">$150</div>
+                        <div class="table_item odd">$130</div>
+
+                        <div class="table_item odd">Все БК</div>
+                        <div class="table_item">$300</div>
+                        <div class="table_item odd">$250</div>
+                    </div>
+                    <div class="section-cost-area-container-button orange">
+                        <button>Подключить Live коэффициенты</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-outer section-footer">
+        <div class="section-inner">
+            <div class="section-footer-top">
+                <div class="section-footer-top-logo">
+                    <a href="#">
+                        <img src="dist/img/logo.png" alt="Логотип">
+                    </a>
+                </div>
+                <nav class="section-footer-top-nav">
+                    <ul>
+                        <li><a class="header_a active" href="/cost.html">Стоимость</a></li>
+                        <li><a class="header_a" href="#">Live DEMO</a></li>
+                        <li><a class="header_a" href="#">Документация</a></li>
+                        <li><a class="header_a" href="/faq.html">Вопросы</a></li>
+                    </ul>
+                </nav>
+                <div class="section-footer-top-language">
+                    <select name="change_language" class="select_language">
+                        <option value="1">Русский</option>
+                        <option value="2">English</option>
+                    </select>
+                </div>
+            </div>
+            <div class="section-footer-links">
+                <ul>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Оферта ODDSCP</a></li>
+                    <li><a href="#">Тех. поддержка</a></li>
+                </ul>
+            </div>
+            <div class="section-footer-bottom">
+                <p>ODDSCP - Api спортивных событий<br>© 2019 – 2020 ODDSCP</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <div class="modal-form modal-auth">
+        <div class="modal-form-title">
+            <h2>Авторизация</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <form action="#" class="modal-form-area">
+            <input type="email" placeholder="Почта">
+            <input type="password" placeholder="Пароль">
+            <div class="modal-form-area-buttons">
+                <input type="submit" value="Войти">
+                <button name="back_reset">Забыли пароль?</button>
+                <span class="reset"></span>
+            </div>
+            <button name="back_reg" class="modal-form-area-button">+ Создать аккаунт</button>
+        </form>
+    </div>
+
+    <div class="modal-form modal-reg">
+        <div class="modal-form-title">
+            <h2>Регистрация</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <form action="#" class="modal-form-area">
+            <input type="email" placeholder="Почта">
+            <input type="text" placeholder="Пароль">
+            <input type="text" placeholder="Повторите пароль">
+            <img src="dist/img/recapcha.webp" alt="Рекапча">
+            <div class="modal-form-area-checkbox">
+                <label class="container">Согласен с правилами сервиса и <br>политикой конфиденциальности 
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <input class="modal-form-area-submit" type="submit" value="+ Создать аккаунт">
+        </form>
+    </div>
+
+    <div class="modal-form modal-reset">
+        <div class="modal-form-title">
+            <h2>Восстановление пароля</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <form action="#" class="modal-form-area">
+            <input type="email" placeholder="Почта">
+            <div class="modal-form-area-success">
+                <img src="dist/img/checkbox-green.svg" alt="Чекбокс галочка">
+                <p>Сообщение отправлено вам на почту</p>
+            </div>
+            <button class="modal-form-area-button">Отправить</button>
+            <button name="back_auth" class="modal-form-area-submit">Войти</button>
+            <button name="back_reg" class="modal-form-area-button">+ Создать аккаунт</button>
+        </form>
+    </div>
+
+    <div class="modal-form modal-fact">
+        <div class="modal-form-title">
+            <h2>138 280</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <div class="modal-form-area">
+            <h3>Событый ежемесячно анализируется сервисом</h3>
+            <p class="modal-fact-text">На данный момент парсер ODDSCP подключен к 10 БК России и других стран. Постоянно ведется работа по добавлению новых БК.<br><br>
+            Мы прислушиваемся к мнению наших клиентов. Вы можете выбрать, какую БК хотели бы видеть, или предложить свою.</p>
+            <button class="modal-form-area-button">Понятно</button>
+        </div>
+    </div>
+
+
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/selectric.min.js"> </script>
+	<script src="dist/js/script-main.min.js"></script>
+	<script src="dist/js/script-cost.min.js"></script>
+
+    </body>
+</html>
