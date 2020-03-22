@@ -1,0 +1,212 @@
+// === Modal ===
+
+.overlay {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.modal {
+
+    &-form {
+        position: fixed;
+        top: -999px;
+        z-index: 4;
+        background-color: $color_bg_modal;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.75);
+        padding: 40px 50px;
+        border-radius: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s ease-in-out;
+
+        width: 580px;
+        color: #fff;
+
+        &-title {
+            margin-bottom: 60px;
+            text-align: center;
+            position: relative;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 700;
+                letter-spacing: -0.65px;
+            }
+
+            img {
+                position: absolute;
+                font-weight: 600;
+                cursor: pointer;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        &-area {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 35px;
+
+            input, button {
+                border-radius: 8px;
+            }
+
+            input[type="submit"], button {
+                cursor: pointer;
+                border: none;
+            }
+
+            input[type="email"], input[type="password"], input[type="text"] {
+                outline: none;
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+                background: $color_bg_modal;
+                border: 1px solid #3c404b;
+                padding: 16px;
+                width: 100%;
+                transition: 0.3s ease-in-out;
+                
+                &::placeholder {
+                    color: #676a73;
+                }
+
+                &:not(:placeholder-shown) {
+                    border-color: #fff;
+                }
+
+                &:focus {
+                    border-color: #fff;
+                }
+            }
+
+            &-buttons {
+                display: flex;
+                justify-content: space-between;
+
+                input[type="submit"] {
+                    background-color: #ff8300;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #fff;
+                    padding: 16px 60px;
+                    cursor: pointer;
+                }
+
+                button {
+                    color: #676a73;
+                    font-size: 18px;
+                    font-weight: 500;
+                    background: none;
+                    border-bottom: 1px solid;
+                    align-self: center;
+                    padding: 0;
+                    border-radius: 0;
+                }
+
+                span {
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                }
+            }
+
+            &-button {
+                background-color: $color_sport_items;
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+                padding: 16px;
+            }
+
+            &-submit {
+                background-color: #ff8300;
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+                padding: 16px;
+            }
+
+            &-success {
+                display: flex;
+
+                p {
+                    color: #2dac37;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-left: 10px;
+                }
+            }
+
+            &-checkbox {
+                padding-top: 25px;
+                border-top: 1px solid #3c404b;
+
+                .container {
+                    position: relative;
+                    padding-left: 45px;
+                    cursor: pointer;
+                    user-select: none;
+
+                    display: block;
+                    font-size: 19px;
+                    font-weight: 500;
+                    letter-spacing: -0.49px;
+                    line-height: 25px;
+                    color: #676a73;
+                  }
+                  
+                  .container input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                  }
+                  
+                  .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 28px;
+                    width: 28px;
+                    border-radius: 7px;
+                    border: 3px solid $color_sport_items;
+                  }
+                  
+                  .container input:checked ~ .checkmark {
+                    background-color: $color_sport_items;
+                  }
+                  
+                  .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                  }
+                  
+                  .container input:checked ~ .checkmark:after {
+                    display: block;
+                  }
+                  
+                  .container .checkmark:after {
+                    background-image: url(/dist/img/checkbox-icon.svg);
+                    width: 23px;
+                    height: 23px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  }
+            }
+
+        }
+    }
+}
+
+// === / Modal

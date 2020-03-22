@@ -33,7 +33,7 @@
 			</div>
 			<div class="section-header-auth">
 				<img src="dist/img/account.svg" alt="Аккаунт лого">
-				<a class="header_a" href="#">Войти</a>
+				<button class="auth header_a">Войти</button>
 			</div>
 		</div>
 	</header>
@@ -52,7 +52,7 @@
 				<div class="section-promo-description-info reg_card">
 					<div class="reg_card-container">
 						<div class="reg_card-container-button">
-							<button>Регистрация</button>
+							<button class="reg">Регистрация</button>
 						</div>
 						<div class="reg_card-container-content">
 							<h3>123<span>/500</span></h3>
@@ -249,7 +249,7 @@
 					<div class="section-about-content-bottom-info reg_card">
 						<div class="reg_card-container">
 							<div class="reg_card-container-button">
-								<button>Регистрация</button>
+								<button class="reg">Регистрация</button>
 							</div>
 							<div class="reg_card-container-content">
 								<h3>123<span>/500</span></h3>
@@ -448,7 +448,7 @@ int main()
 					<div class="reg_card">
 						<div class="reg_card-container">
 							<div class="reg_card-container-button">
-								<button>Регистрация</button>
+								<button class="reg">Регистрация</button>
 							</div>
 							<div class="reg_card-container-content">
 								<h3>123<span>/500</span></h3>
@@ -499,6 +499,63 @@ int main()
 			</div>
 		</footer>
 	</section>
+
+	<div class="overlay"></div>
+
+	<div class="modal-form modal-auth">
+		<div class="modal-form-title">
+			<h2>Авторизация</h2>
+			<img src="dist/img/close-icon.svg" alt="Закрыть">
+		</div>
+		<form action="#" class="modal-form-area">
+			<input type="email" placeholder="Почта">
+			<input type="password" placeholder="Пароль">
+			<div class="modal-form-area-buttons">
+				<input type="submit" value="Войти">
+				<button name="back_reset">Забыли пароль?</button>
+				<span class="reset"></span>
+			</div>
+			<button name="back_reg" class="modal-form-area-button">+ Создать аккаунт</button>
+		</form>
+	</div>
+
+	<div class="modal-form modal-reg">
+		<div class="modal-form-title">
+			<h2>Регистрация</h2>
+			<img src="dist/img/close-icon.svg" alt="Закрыть">
+		</div>
+		<form action="#" class="modal-form-area">
+			<input type="email" placeholder="Почта">
+			<input type="text" placeholder="Пароль">
+			<input type="text" placeholder="Повторите пароль">
+			<img src="dist/img/recapcha.webp" alt="Рекапча">
+			<div class="modal-form-area-checkbox">
+				<label class="container">Согласен с правилами сервиса и <br>политикой конфиденциальности 
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+			</div>
+			<input class="modal-form-area-submit" type="submit" value="+ Создать аккаунт">
+		</form>
+	</div>
+
+	<div class="modal-form modal-reset">
+		<div class="modal-form-title">
+			<h2>Восстановление пароля</h2>
+			<img src="dist/img/close-icon.svg" alt="Закрыть">
+		</div>
+		<form action="#" class="modal-form-area">
+			<input type="email" placeholder="Почта">
+			<div class="modal-form-area-success">
+				<img src="dist/img/checkbox-green.svg" alt="Чекбокс галочка">
+				<p>Сообщение отправлено вам на почту</p>
+			</div>
+			<button class="modal-form-area-button">Отправить</button>
+			<button name="back_auth" class="modal-form-area-submit">Войти</button>
+			<button name="back_reg" class="modal-form-area-button">+ Создать аккаунт</button>
+		</form>
+	</div>
+
 
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/selectric.min.js"> </script>
