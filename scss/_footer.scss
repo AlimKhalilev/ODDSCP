@@ -31,7 +31,7 @@
                     a {
                         position: relative;
 
-                        &:hover {
+                        &:hover, &.active {
                             &::after {
                                 transform: scale(1);
                             }

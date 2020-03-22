@@ -9,6 +9,105 @@
 
 // === FAQ ===
 
+.section-faq {
+    background-color: $color_bg_dark;
+    background-image: url(/dist/img/promo_background-1.svg);
+    min-height: 900px;
+    background-position: 50% -350px;
+    background-size: 110%;
+    background-repeat: no-repeat;
 
+    color: #fff;
+    padding: 80px 0;
+
+    .section-inner {
+
+    }
+
+    &-header {
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 1.75px;
+    }
+
+    &-subheader {
+        font-size: 21px;
+        font-weight: 500;
+        margin: 30px 0 90px 0;
+    }
+
+    &-container {
+
+        &-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+                letter-spacing: 0.33px;
+                white-space: nowrap;
+                margin-right: 30px;
+            }
+
+            span {
+                height: 1px;
+                width: 100%;
+                background-color: $color_header_border;
+            }
+        }
+
+        &-items {
+            margin: 50px 0;
+
+            &-item {
+                padding: 30px 35px;
+                background-color: $color_faq_item_close;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                &-top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 20px;
+                        font-weight: 500;
+
+                        b {
+                            margin-right: 5px;
+                            color: #95989e;
+                        }
+                    }
+
+                    img {
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+
+                &-bottom {
+                    display: none;
+
+                    p {
+                        color: #cdced2;
+                        font-size: 20px;
+                        font-weight: 500;
+                        letter-spacing: 0.05px;
+                        line-height: 35px;
+                        padding-top: 20px;
+                        margin-top: 20px;
+                        border-top: 1px solid #4a505e;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // === / FAQ ===
