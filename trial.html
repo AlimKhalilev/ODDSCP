@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ODDSCP | Frontend</title>
-	<link rel="stylesheet" href="dist/css/style-personal.min.css">
+	<link rel="stylesheet" href="dist/css/style-trial.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
@@ -42,8 +42,8 @@
             <div class="section-personal-header">
                 <nav class="section-personal-header-nav">
                     <ul>
-                        <li><a class="header_a active" href="/personal.html">Личные данные</a></li>
-                        <li><a class="header_a" href="/trial.html">TRIAL доступ</a></li>
+                        <li><a class="header_a" href="/personal.html">Личные данные</a></li>
+                        <li><a class="header_a active" href="/trial.html">TRIAL доступ</a></li>
                         <li><a class="header_a" href="/bk.html">Предложить БК</a></li>
                     </ul>
                 </nav>
@@ -73,54 +73,23 @@
                         <a href="#">Документация для разработчиков</a>
                     </div>
                 </div>
-                <div class="section-personal-container-bottom">
-                    <div class="section-personal-container-bottom-info personal-area">
-                        <h2 class="section-personal-container-bottom-info-header">Данные</h2>
-                        <form class="section-personal-container-bottom-info-form" action="">
-                            <div class="section-personal-container-bottom-info-form-inputs">
-                                <input type="text" placeholder="Имя">
-                                <input type="email" placeholder="Почта">
-                                <input type="text" placeholder="Skype / Telegram">
-                            </div>
-                            <div class="section-personal-container-bottom-info-form-pay">
-                                <h3>Платёжные данные:</h3>
-                                <p>5965 xxxx xxxx 1853</p>
-                            </div>
-                            <div class="section-personal-container-bottom-info-form-buttons">
-                                <input type="submit" value="Сохранить">
-                                <button>Отмена</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="section-personal-container-bottom-password personal-area">
-                        <h2 class="section-personal-container-bottom-password-header">Данные</h2>
-                        <form action="" class="section-personal-container-bottom-password-form">
-                            <div class="section-personal-container-bottom-password-form-input">
-                                <input type="text" placeholder="Введите пароль">
-                                <img name="pass_show" src="dist/img/pass-show.svg" alt="Пароль виден">
-                            </div>
-                            <div class="section-personal-container-bottom-password-form-input">
-                                <input type="password" placeholder="Введите пароль">
-                                <img name="pass_hide" src="dist/img/pass-hide.svg" alt="Пароль не виден">
-                            </div>
-                            <input type="submit" value="Сохранить">
-                        </form>
-                    </div>
-                    <div class="section-personal-container-bottom-email personal-area">
-                        <h2 class="section-personal-container-bottom-email-header">Email уведомления</h2>
-                        <form action="" class="section-personal-container-bottom-email-form">
-                            <div class="checkbox">
-                                <label class="container">Сообщать о сроке оплаты
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">Новости сервиса
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </form>
-                    </div>
+                <div class="section-personal-container-trial personal-area">
+                    <h2 class="section-personal-container-trial-header">TRIAL доступ:</h2>
+                    <p class="section-personal-container-trial-text">
+                        Месяц бесплатного пользования сервисом. Запросите TRIAL доступ на 30 дней, этого времени хватит на 
+                        разработку или интеграцию и настройку собственного бота.
+                    </p>
+                    <form action="" class="section-personal-container-trial-form">
+                        <div class="section-personal-container-trial-form-inputs">
+                            <select id="connect_type">
+                                <option value="1">Способ связи</option>
+                                <option value="2">Телефон</option>
+                                <option value="3">Почта</option>
+                            </select>
+                            <input type="text" placeholder="Логин/номер">
+                        </div>
+                        <input type="submit" value="Запросить Trial">
+                    </form>
                 </div>
             </div>
         </div>
@@ -235,7 +204,7 @@
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/selectric.min.js"> </script>
     <script src="dist/js/script-main.min.js"></script>
-    <script src="dist/js/script-personal.min.js"></script>
+    <script src="dist/js/script-trial.min.js"></script>
 
     </body>
 </html>

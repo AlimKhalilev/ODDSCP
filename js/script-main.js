@@ -31,14 +31,6 @@ $(".overlay, .modal-form-title > img, .modal-fact > div > button").on("click",fu
     $('.overlay').attr('name', "");
 });
 
-$("#lose_pass").click(function() {
-    $('.overlay').click();
-    setTimeout(function() {
-        $(".reset").click();
-    }, 500);
-    return false;
-});
-
 $("button[name='back_reset'], button[name='back_auth'], button[name='back_reg']").click(function() {
     $('.overlay').click();
     name = "." + this.name.substr(5);

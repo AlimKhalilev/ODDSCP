@@ -162,17 +162,17 @@
                     letter-spacing: -0.49px;
                     line-height: 25px;
                     color: #676a73;
-                  }
-                  
-                  .container input {
+                }
+
+                .container input {
                     position: absolute;
                     opacity: 0;
                     cursor: pointer;
                     height: 0;
                     width: 0;
-                  }
-                  
-                  .checkmark {
+                }
+
+                .checkmark {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -180,29 +180,29 @@
                     width: 28px;
                     border-radius: 7px;
                     border: 3px solid $color_sport_items;
-                  }
-                  
-                  .container input:checked ~ .checkmark {
+                }
+
+                .container input:checked ~ .checkmark {
                     background-color: $color_sport_items;
-                  }
-                  
-                  .checkmark:after {
-                    content: "";
+                }
+
+                .checkmark:after {
+                content: "";
                     position: absolute;
                     display: none;
-                  }
-                  
-                  .container input:checked ~ .checkmark:after {
+                }
+
+                .container input:checked ~ .checkmark:after {
                     display: block;
-                  }
-                  
-                  .container .checkmark:after {
+                }
+
+                .container .checkmark:after {
                     background-image: url(/dist/img/checkbox-icon.svg);
                     width: 23px;
                     height: 23px;
                     background-repeat: no-repeat;
                     background-position: center;
-                  }
+                }
             }
 
         }
