@@ -29,10 +29,11 @@
             font-size: 50px;
             font-weight: 700;
             letter-spacing: 1.75px;
+            line-height: 65px;
         }
     
         &-subheader {
-            font-size: 21px;
+            font-size: 20px;
             font-weight: 500;
             margin: 30px 0 50px 0;
             line-height: 35px;
@@ -162,7 +163,76 @@
     }
 
     &-bottom {
+        margin-top: 100px;
 
+        &-description {
+            font-size: 20px;
+            margin-top: 30px;
+            color: #8d8e93;
+        }
+
+        &-container {
+            margin: 50px 0 80px 0;
+            padding: 32px;
+            border-radius: 15px;
+            background-color: #22252f;
+
+            &-items {
+                margin-bottom: 32px;
+                margin-left: 10px;
+
+                span {
+                    font-size: 20px;
+                    color: #8d8e93;
+                    cursor: pointer;
+
+                    &:not(:last-child) {
+                        margin-right: 30px;
+                    }
+
+                    &.active {
+                        color: #fc8b2b;
+                    }
+
+                    b, &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &-table {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                border-radius: 15px;
+                overflow: hidden;
+
+                .table_item {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #fff;
+                    padding: 30px 0;
+                    background-color: #2c323d;
+
+                    &.title {
+                        font-weight: 700;
+                    }
+
+                    &.success {
+                        font-weight: 700;
+                        color: #2a8f36;
+                    }
+
+                    &.fall {
+                        font-weight: 700;
+                        color: #b93535;
+                    }
+
+                    &.even {
+                        background-color: #262933;
+                    }
+                }
+            }
+        }
     }
 
 }
