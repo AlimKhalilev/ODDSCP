@@ -122,7 +122,7 @@
                 <ul>
                     <li><a href="#">Политика конфиденциальности</a></li>
                     <li><a href="#">Оферта ODDSCP</a></li>
-                    <li><a href="#">Тех. поддержка</a></li>
+                    <li><a href="/support.html">Тех. поддержка</a></li>
                 </ul>
             </div>
             <div class="section-footer-bottom">
@@ -289,10 +289,43 @@
                     <p class="modal-form-bottom-cash-text"><b>$750</b>$250/мес</p> 
                 </div>
                 <div class="modal-form-bottom-change">
-                    <button>Сменить тариф</button>
+                    <button name="back_rate_success">Сменить тариф</button>
                     <p>Добавьте еще 1 БК для смены тарифа</p>
+                    <span class="rate_success" aria-label="open_rate_success"></span>
+                    <span class="rate_error" aria-label="open_rate_error"></span>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="modal-form modal-rate_success">
+        <div class="modal-form-title">
+            <h2>Ваш тариф изменён</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <div class="modal-form-area">
+            <p class="modal-form-area-title">Вы оплатили тариф на:</p>
+            <h3 class="modal-form-area-rate">Live ставки / 3 секунды / 3 БК (Леон, Марафон, Фонбет)</h3>
+            <p class="modal-form-area-date">
+                Тариф действует до 15.07.2020. Желаем Вам новых 
+                <br>побед и высоких коэффициентов.
+            </p>
+            <button class="modal-form-area-button">Понятно</button>
+        </div>
+    </div>
+
+    <div class="modal-form modal-rate_error">
+        <div class="modal-form-title">
+            <h2>Ошибка</h2>
+            <img src="dist/img/close-icon.svg" alt="Закрыть">
+        </div>
+        <div class="modal-form-area">
+            <p class="modal-form-area-title">Что-то пошло не так. 
+                <br>Попробуйте обновить страницу и повторить действие. </p>
+            <p class="modal-form-area-problem">
+                В случае возникновения проблем - сообщите в <a href="/support.html">тех. поддержку</a>
+            </p>
+            <button name="back_rate" class="modal-form-area-button">Назад</button>
         </div>
     </div>
 

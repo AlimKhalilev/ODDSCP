@@ -11,7 +11,7 @@ $(function() {
       });
 });
 
-$(".auth, .reg, .reset, .fact, .rate").on("click",function(event){
+$(".auth, .reg, .reset, .fact, .rate, .rate_success, .rate_error, .bk").on("click",function(event){
     $('.overlay').attr('name', this.classList[0]);
     $(".overlay").css("visibility", "visible");
     $(".overlay").css("opacity", "0.8");
@@ -29,7 +29,7 @@ $(".auth, .reg, .reset, .fact, .rate").on("click",function(event){
     }
 });
 
-$(".overlay, .modal-form-title > img, .modal-fact > div > button").on("click",function(event){
+$(".overlay, .modal-form-title > img, .modal-fact > div > button, .modal-rate_success > div > button").on("click",function(event){
     if ($(".modal-" + $('.overlay').attr('name')).css("top") == "-999px") {
         $('.close_button').click();
         $('.close_button > input').prop('checked', false);
@@ -43,7 +43,7 @@ $(".overlay, .modal-form-title > img, .modal-fact > div > button").on("click",fu
     $('.overlay').attr('name', "");
 });
 
-$("button[name='back_reset'], button[name='back_auth'], button[name='back_reg']").click(function() {
+$("button[name='back_reset'], button[name='back_auth'], button[name='back_reg'], button[name='back_rate_success'], button[name='back_rate_error'], button[name='back_rate']").click(function() {
     $('.overlay').click();
     name = "." + this.name.substr(5);
     setTimeout(function() {

@@ -252,6 +252,98 @@
                 font-size: 15px;
                 font-weight: 500;
             }
+
+            span {
+                position: absolute;
+                width: 0;
+                height: 0;
+            }
         }
+    }
+}
+
+.modal-rate_success {
+    padding: 40px 30px;
+    width: 620px;
+
+    .modal-form-area {
+        p, h3 {
+            text-align: center;
+        }
+
+        &-title {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        &-rate {
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+
+        &-date {
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: -0.46px;
+            line-height: 28px;
+            color: #92959b;
+        }
+
+        &-button {
+            width: 350px;
+            justify-self: center;
+        }
+    }
+}
+
+.modal-rate_error {
+    padding: 40px 30px;
+    width: 620px;
+
+    .modal-form-title {
+        color: #b93535;
+    }
+
+    .modal-form-area {
+        p {
+            text-align: center;
+        }
+
+        &-title {
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: -0.46px;
+            line-height: 25px;
+        }
+
+        &-problem {
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: -0.46px;
+            line-height: 28px;
+            color: #92959b;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                border-bottom: 1px solid;
+            }
+        }
+
+        &-button {
+            width: 350px;
+            justify-self: center;
+        }
+    }
+}
+
+.modal-bk {
+    .modal-form-area-text {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        line-height: 25px;
+        text-align: center;
     }
 }
