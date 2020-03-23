@@ -1,0 +1,257 @@
+.modal-rate {
+    width: 1200px;
+    padding: 0;
+    overflow: hidden;
+
+    .modal-top {
+        padding: 30px 50px 0 30px;
+    }
+
+    .modal-bottom {
+        padding: 30px 50px 30px 50px;
+        background-color: #343c4c;
+    }
+}
+
+.modal-rate .modal-form {
+
+    &-title {
+        text-align: left;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    &-area {
+        display: block;
+
+        &-checkbox {
+            border: none;
+            padding: 0;
+
+            .container {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+
+                b {
+                    color: #92959b;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &-header {
+            padding: 25px;
+            border-radius: 15px;
+            background-color: #343c4c;
+            font-size: 20px;
+        }
+
+        &-settings {
+            margin: 40px 0 50px 0;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                font-size: 21px;
+                font-weight: 500;
+            }
+
+            &-container {
+                display: flex;
+
+                button {
+                    font-size: 21px;
+                    font-weight: 500;
+                    padding: 18px 25px;
+                    border-radius: 15px;
+                    background: none;
+                    border: 1px solid #676b73;
+                    color: #676b73;
+
+                    &.active {
+                        color: #fff;
+                        background-color: #343c4c;
+                        border: none;
+                    }
+                }
+
+                &-left, &-right {
+                    flex-basis: 50%;
+                }
+
+                &-left {
+                    margin-right: 20px;
+                    padding-right: 20px;
+                    border-right: 3px solid #222733;
+
+                    &-type {
+
+                        &-buttons {
+                            margin: 30px 0 50px 0;
+                            display: flex;
+                            justify-content: space-between;
+
+                            button:first-child {
+                                margin-right: 15px;
+                            }
+                        }
+
+                        button {
+                            padding: 14px 25px;
+
+                            span {
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 50%;
+                                background-color: #313644;
+                                color: #6e727c;
+                                font-size: 16px;
+                                font-weight: 700;
+
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+
+                    &-bk {
+                        p {
+                            font-size: 16px;
+                            font-weight: 500;
+                            margin: 20px 0 40px 0;
+                            color: #676b73;
+                        }
+
+                        &-table {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            row-gap: 25px;
+
+                            .modal-form-area-checkbox:nth-child(even) {
+                                justify-self: flex-end;
+                            }
+                        }
+                    }
+                }
+
+                &-right {
+
+                    &-count {
+
+                        &-buttons {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 30px 0 50px 0;
+
+                            button {
+                                flex-basis: 30%;
+                            }
+                        }
+                    }
+
+                    &-time {
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 500;
+                            margin: 20px 0 40px 0;
+                            color: #676b73;
+                        }
+
+                        &-range {
+
+                            &-text {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 20px;
+
+                                span {
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    letter-spacing: -0.41px;
+
+                                    sup {
+                                        color: #92959b;
+                                    }
+
+                                    &.active {
+                                        color: #fc8b2b;
+
+                                        sup {
+                                            color: #fc8b2b;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+
+        &-cash {
+
+            &-title {
+                color: #fc8b2b;
+                font-size: 21px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            &-text {
+                font-size: 25px;
+                font-weight: 700;
+                letter-spacing: 0.38px;
+
+                b {
+                    font-size: 65px;
+                    font-weight: 700;
+                    letter-spacing: -1.75px;
+                    color: #fc8b2b;
+                    margin-right: 25px;
+                }
+            }
+        }
+
+        &-change {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            padding-left: 40px;
+            border-left: 1px solid #484f5e;
+
+            button {
+                background-color: #ff8300;
+                font-size: 21px;
+                font-weight: 500;
+                color: #fff;
+                padding: 18px 25px;
+                border-radius: 15px;
+                border: none;
+                cursor: pointer;
+            }
+
+            p {
+                color: #b93535;
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}

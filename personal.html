@@ -57,7 +57,7 @@
             <div class="section-personal-container">
                 <div class="section-personal-container-rate personal-area">
                     <p><b>Тариф:</b>Live вилки / 3 сек. / 3 БК</p> 
-                    <button>Изменить</button>
+                    <button class="rate">Изменить</button>
                 </div>
                 <div class="section-personal-container-key personal-area">
                     <div class="section-personal-container-key-top">
@@ -218,8 +218,118 @@
         </form>
     </div>
 
-	<script src="dist/js/jquery.min.js"></script>
-	<script src="dist/js/selectric.min.js"> </script>
+    <div class="modal-form modal-rate">
+        <div class="modal-top">
+            <div class="modal-form-title">
+                <h2>Смена тарифа</h2>
+                <img src="dist/img/close-icon.svg" alt="Закрыть">
+            </div>
+    
+            <div class="modal-form-area">
+                <div class="modal-form-area-header">
+                    <p><b>Тариф:</b> Live вилки / 3 сек. / 3 БК</p>
+                </div>
+                <div class="modal-form-area-settings">
+                    <h2>Настройка тарифа</h2>
+                    <div class="modal-form-area-settings-container">
+                        <div class="modal-form-area-settings-container-left">
+                            <div class="modal-form-area-settings-container-left-type">
+                                <h3>Тип тарифа:</h3>
+                                <div class="modal-form-area-settings-container-left-type-buttons">
+                                    <button class="active">Live вилки <span>?</span></button>
+                                    <button>Live коэффициенты <span>?</span></button>
+                                </div>
+                            </div>
+                            <div class="modal-form-area-settings-container-left-bk">
+                                <h3>Выберите БК:</h3>
+                                <p>Доступно 2 БК, 3 БК, 5 БК и все БК:</p>
+                                <div class="modal-form-area-settings-container-left-bk-table">
+    
+                                    <div class="modal-form-area-checkbox">
+                                        <label class="container">БК ЛЕОН <b>(leon.ru)</b>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-form-area-checkbox">
+                                        <label class="container">БК ЛЕОН <b>(leon.ru)</b>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-form-area-checkbox">
+                                        <label class="container">БК ЛЕОН <b>(leon.ru)</b>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-form-area-checkbox">
+                                        <label class="container">БК ЛЕОН <b>(leon.ru)</b>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-form-area-checkbox">
+                                        <label class="container">БК ЛЕОН <b>(leon.ru)</b>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-form-area-checkbox">
+                                        <label class="container">БК ЛЕОН <b>(leon.ru)</b>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-form-area-settings-container-right">
+                            <div class="modal-form-area-settings-container-right-count">
+                                <h3>Частота запросов:</h3>
+                                <div class="modal-form-area-settings-container-right-count-buttons">
+                                    <button class="active">1 сек</button>
+                                    <button>3 сек</button>
+                                    <button>10 сек</button>
+                                </div>
+                            </div>
+                            <div class="modal-form-area-settings-container-right-time">
+                                <h3>Срок оплаты:</h3>
+                                <p>Чем больше срок, тем дешевле месяц!</p>
+                                <div class="modal-form-area-settings-container-right-time-range">
+                                    <div id="slider-range-min"></div>
+                                    <div class="modal-form-area-settings-container-right-time-range-text">
+                                        <span class="active">1 мес.</span>
+                                        <span class="active">3 мес.<sup>-15%</sup></span>
+                                        <span class="active">6 мес.<sup>-20%</sup></span>
+                                        <span>12 мес.<sup>-25%</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-bottom">
+            <div class="modal-form-bottom">
+                <div class="modal-form-bottom-cash">
+                    <p class="modal-form-bottom-cash-title">К оплате:</p>
+                    <p class="modal-form-bottom-cash-text"><b>$750</b>$250/мес</p> 
+                </div>
+                <div class="modal-form-bottom-change">
+                    <button>Сменить тариф</button>
+                    <p>Добавьте еще 1 БК для смены тарифа</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/jquery-ui.min.js"></script>
+    <script src="dist/js/selectric.min.js"> </script>
     <script src="dist/js/script-main.min.js"></script>
     <script src="dist/js/script-personal.min.js"></script>
 

@@ -2,9 +2,16 @@
 
 $(function() {
     $('.select_language').selectric();
+
+    $( "#slider-range-min" ).slider({
+        range: "min",
+        value: 8,
+        min: 1,
+        max: 12
+      });
 });
 
-$(".auth, .reg, .reset, .fact").on("click",function(event){
+$(".auth, .reg, .reset, .fact, .rate").on("click",function(event){
     $('.overlay').attr('name', this.classList[0]);
     $(".overlay").css("visibility", "visible");
     $(".overlay").css("opacity", "0.8");
@@ -13,7 +20,12 @@ $(".auth, .reg, .reset, .fact").on("click",function(event){
         $(".modal-" + this.classList[0]).css("top", "70px");
     }
     else {
-        $(".modal-" + this.classList[0]).css("top", "150px");
+        if (this.classList[0] == "rate") {
+            $(".modal-" + this.classList[0]).css("top", "20px");
+        }
+        else {
+            $(".modal-" + this.classList[0]).css("top", "150px");
+        }
     }
 });
 
