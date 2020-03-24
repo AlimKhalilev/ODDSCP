@@ -30,6 +30,10 @@
         width: 580px;
         color: #fff;
 
+        @media ($media_xl) {
+            padding: 30px 40px;
+        }
+
         &-title {
             margin-bottom: 60px;
             text-align: center;
@@ -53,7 +57,12 @@
         &-area {
             display: grid;
             grid-template-columns: 1fr;
-            grid-row-gap: 35px;
+            row-gap: 35px;
+
+            @media ($media_xl) {
+                row-gap: 25px;
+            }
+    
 
             input, button {
                 border-radius: 8px;

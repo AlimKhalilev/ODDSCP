@@ -69,6 +69,10 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
+
+    @media ($media_xl) {
+        font-size: 20px;
+    }
 }
 
 .mt-20 {
@@ -209,6 +213,10 @@ body {
     letter-spacing: 1.93px;
     line-height: 65px;
     color: #fff;
+
+    @media ($media_xl) {
+        font-size: 50px;
+    }
 }
 
 .bg_wave {
@@ -218,6 +226,10 @@ body {
     background-size: 110%;
     background-repeat: no-repeat;
     color: #fff;
+
+    @media ($media_xl) {
+        background-position: 50% -330px;
+    }
 }
 
 // === / Mixins ===

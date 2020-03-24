@@ -16,12 +16,20 @@
         display: grid;
         row-gap: 40px;
 
+        @media ($media_xl) {
+            row-gap: 35px;
+        }
+
         img, h1, h2, a {
             justify-self: center;
         }
 
         img {
             margin-bottom: 30px;
+
+            @media ($media_xl) {
+                width: 650px;
+            }
         }
 
         h1 {

@@ -17,6 +17,10 @@
     background-repeat: no-repeat;
     background-color: $color_bg_dark;
 
+    @media ($media_xl) {
+        min-height: 800px;
+    }
+
     .section-inner {
         display: flex;
     }
@@ -27,11 +31,19 @@
             color: #fff;
             margin-top: 140px;
 
+            @media ($media_xl) {
+                margin-top: 60px;
+            }
+
             h1 {
                 font-size: 67px;
                 font-weight: 700;
                 letter-spacing: 0.07px;
                 line-height: 71px;
+
+                @media ($media_xl) {
+                    font-size: 56px;
+                }
             }
 
             h2 {
@@ -40,6 +52,11 @@
                 font-weight: 700;
                 letter-spacing: 1.47px;
                 line-height: 48px;
+
+                @media ($media_xl) {
+                    font-size: 32px;
+                    margin: 25px 0 40px 0;
+                }
             }
 
             p {
@@ -47,16 +64,33 @@
                 font-weight: 500;
                 letter-spacing: -0.8px;
                 line-height: 45px;
+
+                @media ($media_xl) {
+                    font-size: 16px;
+                    line-height: 30px;
+                }
             }
         }
 
         &-info {
             margin-top: 75px;
+
+            @media ($media_xl) {
+                margin-top: 40px;
+            }
+        }
+
+        @media ($media_xl) {
+            flex-basis: 80%;
         }
     }
 
     &-img {
-
+        img {
+            @media ($media_xl) {
+                max-width: 100%;
+            } 
+        }
     }
 }
 
@@ -69,6 +103,10 @@
 
     .section-inner {
         padding: 30px 0 200px 0;
+
+        @media ($media_xl) {
+            padding: 30px 0 140px 0;
+        }
     }
 
     &-header {
@@ -104,6 +142,10 @@
                         font-weight: 700;
                         letter-spacing: 2.27px;
                         line-height: 77px;
+
+                        @media ($media_xl) {
+                            font-size: 50px;
+                        }
                     }
                 }
     
@@ -114,6 +156,10 @@
                         letter-spacing: -0.81px;
                         line-height: 38px;
                         margin: 20px 0;
+
+                        @media ($media_xl) {
+                            font-size: 26px;
+                        }
                     }
                 }
     
@@ -124,6 +170,11 @@
                         letter-spacing: 0.25px;
                         line-height: 30px;
                         opacity: 0.9;
+
+                        @media ($media_xl) {
+                            font-size: 15px;
+                            line-height: 25px;
+                        }
                     }
                 }
             }
@@ -156,12 +207,20 @@
     padding: 100px 0 180px 0;
     background-color: $color_bg_light;
 
+    @media ($media_xl) {
+        padding: 100px 0 120px 0;
+    }
+
     .section-inner {
         display: flex;
     }
 
-    &-img {
-
+    &-image {
+        img {
+            @media ($media_xl) {
+                max-width: 100%;
+            }
+        }
     }
 
     &-content {
@@ -171,6 +230,10 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @media ($media_xl) {
+            flex-basis: 78%;
+        }
+
         &-top {
 
             &-header {
@@ -179,6 +242,10 @@
 
             &-items {
                 margin: 40px 0 70px 0;
+
+                @media ($media_xl) {
+                    margin: 30px 0;
+                }
 
                 &-item {
                     display: flex;
@@ -194,6 +261,11 @@
                         letter-spacing: 1px;
                         line-height: 47px;
                         margin-left: 15px;
+
+                        @media ($media_xl) {
+                            font-size: 25px;
+                            line-height: 35px;
+                        }
                     }
 
                     &:not(:last-child) {
@@ -208,6 +280,12 @@
                 letter-spacing: 0.88px;
                 line-height: 36px;
                 width: 85%;
+
+                @media ($media_xl) {
+                    width: 100%;
+                    font-size: 22px;
+                    line-height: 30px;
+                }
             }
         }
 
@@ -219,6 +297,13 @@
                 line-height: 36px;
                 margin-bottom: 30px;
                 width: 85%;
+
+                @media ($media_xl) {
+                    width: 100%;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    line-height: 25px;
+                }
             }
         }
     }
@@ -273,6 +358,10 @@
         &-img {
             img {
                 min-width: 100%;
+
+                @media ($media_xl) {
+                    max-width: 100%;
+                }
             }
         }
     }
@@ -301,6 +390,10 @@
 .section-sport {
     background-color: $color_bg_light;
     padding: 150px 0 120px 0;
+
+    @media ($media_xl) {
+        padding: 120px 0;
+    }
 
     .section-inner {
 
@@ -339,6 +432,13 @@
             &:last-child {
                 margin-top: 20px;
             }
+
+            @media ($media_xl) {
+                &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                    margin-bottom: 20px;
+                }
+            }
+
         }
     }
 }
@@ -378,6 +478,10 @@
         color: #fff;
         text-align: center;
         margin: 25px 0 60px 0;
+
+        @media ($media_xl) {
+            font-size: 30px;
+        }
     }
 
     &-content, &-bottom {
@@ -496,6 +600,10 @@
     padding: 190px 0 260px 0;
     color: #fff;
 
+    @media ($media_xl) {
+        padding: 150px 0 200px 0;
+    }
+
     .section-inner {
 
     }
@@ -508,6 +616,10 @@
 
         .section-footer {
             background-color: transparent;
+        }
+
+        @media ($media_xl) {
+            background-size: contain;
         }
     }
 
@@ -523,6 +635,17 @@
                 font-weight: 700;
                 letter-spacing: 2.09px;
                 margin: 0 15px;
+
+                @media ($media_xl) {
+                    font-size: 180px;
+                }
+                
+            }
+
+            @media ($media_xl) {
+                img {
+                    width: 120px;
+                }
             }
         }
 
@@ -532,12 +655,24 @@
             letter-spacing: 2.09px;
             text-align: center;
             margin-top: 40px;
+
+            @media ($media_xl) {
+                margin-top: 30px;
+            }
+
+            @media ($media_xl) {
+                font-size: 50px;
+            }
         }
 
     }
 
     &-description {
         margin: 50px 0 100px 0;
+
+        @media ($media_xl) {
+            margin: 40px 0 80px 0;
+        }
 
         p {
             font-size: 22px;
@@ -546,8 +681,16 @@
             line-height: 30px;
             text-align: center;
 
+            @media ($media_xl) {
+                font-size: 18px;
+            }
+
             &:first-child {
                 margin-bottom: 60px;
+
+                @media ($media_xl) {
+                    margin-bottom: 40px;
+                }
             }
         }
     }

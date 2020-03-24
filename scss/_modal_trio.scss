@@ -3,12 +3,16 @@
     padding: 0;
     overflow: hidden;
 
+    @media ($media_xl) {
+        width: 1100px;
+    }
+
     .modal-top {
-        padding: 30px 50px 0 30px;
+        padding: 30px 30px 0 30px;
     }
 
     .modal-bottom {
-        padding: 30px 50px 30px 50px;
+        padding: 20px 30px;
         background-color: #343c4c;
     }
 }
@@ -19,8 +23,16 @@
         text-align: left;
         margin-bottom: 30px;
 
+        @media ($media_xl) {
+            font-size: 20px;
+        }
+
         h2 {
             font-size: 28px;
+
+            @media ($media_xl) {
+                font-size: 25px;
+            }
         }
     }
 
@@ -49,19 +61,37 @@
             border-radius: 15px;
             background-color: #343c4c;
             font-size: 20px;
+
+            @media ($media_xl) {
+                font-size: 18px;
+                padding: 20px;
+            }
         }
 
         &-settings {
             margin: 40px 0 50px 0;
 
+            @media ($media_xl) {
+                margin: 30px 0 40px 0;
+            }
+
             h2 {
                 font-size: 28px;
                 margin-bottom: 30px;
+
+                @media ($media_xl) {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
             }
 
             h3 {
                 font-size: 21px;
                 font-weight: 500;
+
+                @media ($media_xl) {
+                    font-size: 18px;
+                }
             }
 
             &-container {
@@ -80,6 +110,11 @@
                         color: #fff;
                         background-color: #343c4c;
                         border: none;
+                    }
+
+                    @media ($media_xl) {
+                        padding: 12px 25px;
+                        font-size: 18px;
                     }
                 }
 
@@ -102,10 +137,18 @@
                             button:first-child {
                                 margin-right: 15px;
                             }
+
+                            @media ($media_xl) {
+                                margin: 20px 0 30px 0;
+                            }
                         }
 
                         button {
                             padding: 14px 25px;
+
+                            @media ($media_xl) {
+                                padding: 10px 25px;
+                            }
 
                             span {
                                 height: 30px;
@@ -129,12 +172,20 @@
                             font-weight: 500;
                             margin: 20px 0 40px 0;
                             color: #676b73;
+
+                            @media ($media_xl) {
+                                margin: 15px 0 30px 0;
+                            }
                         }
 
                         &-table {
                             display: grid;
                             grid-template-columns: 1fr 1fr;
                             row-gap: 25px;
+
+                            @media ($media_xl) {
+                                row-gap: 18px;
+                            }
 
                             .modal-form-area-checkbox:nth-child(even) {
                                 justify-self: flex-end;
@@ -155,6 +206,10 @@
                             button {
                                 flex-basis: 30%;
                             }
+
+                            @media ($media_xl) {
+                                margin: 20px 0 30px 0;
+                            }
                         }
                     }
 
@@ -165,6 +220,10 @@
                             font-weight: 500;
                             margin: 20px 0 40px 0;
                             color: #676b73;
+
+                            @media ($media_xl) {
+                                margin: 15px 0 30px 0;
+                            }
                         }
 
                         &-range {
@@ -210,6 +269,10 @@
                 font-size: 21px;
                 font-weight: 500;
                 margin-bottom: 10px;
+
+                @media ($media_xl) {
+                    font-size: 18px;
+                }
             }
 
             &-text {
@@ -217,12 +280,20 @@
                 font-weight: 700;
                 letter-spacing: 0.38px;
 
+                @media ($media_xl) {
+                    font-size: 18px;
+                }
+
                 b {
                     font-size: 65px;
                     font-weight: 700;
                     letter-spacing: -1.75px;
                     color: #fc8b2b;
                     margin-right: 25px;
+
+                    @media ($media_xl) {
+                        font-size: 55px;
+                    }
                 }
             }
         }
@@ -245,6 +316,12 @@
                 border-radius: 15px;
                 border: none;
                 cursor: pointer;
+
+                @media ($media_xl) {
+                    padding: 16px 22px;
+                    font-size: 18px;
+                    border-radius: 12px;
+                }
             }
 
             p {

@@ -61,6 +61,10 @@
 
                 img {
                     min-width: 100%;
+
+                    @media ($media_xl) {
+                        max-width: 100%;
+                    }
                 }
 
                 .selectric {

@@ -5,6 +5,10 @@
     background-color: $color_bg_light;
     height: 105px;
     border-bottom: 1px solid $color_header_border;
+
+    @media ($media_xl) {
+        height: 90px;
+    }
     
     .section-inner {
         height: inherit;
@@ -13,12 +17,18 @@
     }
 
     &-logo {
-
+        img {
+            max-width: 100%;
+        }
     }
 
     &-nav {
         margin: 0 auto 0 90px;
         height: inherit;
+
+        @media ($media_xl) {
+            margin: 0 auto;
+        }
 
         ul {
             height: 100%;
@@ -29,6 +39,10 @@
 
                 &:not(:last-child) {
                     margin-right: 40px;
+
+                    @media ($media_xl) {
+                        margin-right: 25px;
+                    }
                 }
 
                 a {
@@ -61,6 +75,10 @@
 
     &-language {
         margin-right: 38px;
+
+        @media ($media_xl) {
+            margin-right: 30px;
+        }
     }
 
     &-auth {
@@ -71,8 +89,16 @@
         border-right: 1px solid $color_header_border;;
         height: 100%;
 
+        @media ($media_xl) {
+            padding: 0 25px;
+        }
+
         img {
             margin-right: 25px;
+
+            @media ($media_xl) {
+                margin-right: 15px;
+            }
         }
 
         button {

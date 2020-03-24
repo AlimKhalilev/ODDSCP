@@ -28,16 +28,16 @@ $(".auth, .reg, .reset, .fact, .rate, .rate_success, .rate_error, .bk").on("clic
     $(".overlay").css("visibility", "visible");
     $(".overlay").css("opacity", "0.8");
     $("body").css("overflow-y", "hidden");
-    if ($(window).width() <= '578') {
-        $(".modal-" + this.classList[0]).css("top", "70px");
+
+    if ($(window).width() <= '1600') {
+        $(".modal-" + this.classList[0]).css("top", "50px");
     }
     else {
-        if (this.classList[0] == "rate") {
-            $(".modal-" + this.classList[0]).css("top", "20px");
-        }
-        else {
-            $(".modal-" + this.classList[0]).css("top", "150px");
-        }
+        $(".modal-" + this.classList[0]).css("top", "150px");
+    }
+
+    if (this.classList[0] == "rate") {
+        $(".modal-" + this.classList[0]).css("top", "20px");
     }
 });
 
