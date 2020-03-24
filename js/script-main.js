@@ -3,12 +3,14 @@
 $(function() {
     $('.select_language').selectric();
 
-    $( "#slider-range-min" ).slider({
-        range: "min",
-        value: 8,
-        min: 1,
-        max: 12
-      });
+    if ($("div").is("#slider-range-min")) {
+        $( "#slider-range-min" ).slider({
+            range: "min",
+            value: 8,
+            min: 1,
+            max: 12
+        });
+    }
 });
 
 $(".auth, .reg, .reset, .fact, .rate, .rate_success, .rate_error, .bk").on("click",function(event){

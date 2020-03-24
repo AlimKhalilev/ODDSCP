@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ODDSCP | Frontend</title>
-	<link rel="stylesheet" href="dist/css/style-404.min.css">
+	<link rel="stylesheet" href="dist/css/style-support.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
@@ -37,12 +37,84 @@
 		</div>
     </header>
     
-    <section class="section-outer section-404">
+    <section class="section-outer section-support">
         <div class="section-inner">
-            <img src="dist/img/404.svg" alt="404 изображение">
-            <h1>Страница не найдена</h1>
-            <h2>но за это время мы нашли 1 529 событий. Заработайте на этом</h2>
-            <a href="/">Вернуться на сайт</a>
+            <h1 class="section-support-header">Техническая поддержка</h1>
+
+            <div class="section-support-container">
+                <h3 class="section-support-container-title">Новая заявка</h3>
+                <div class="section-support-container-items">
+                    <div class="section-support-container-items-new">
+                        <form action="" class="section-support-container-items-new-form">
+                            <div class="section-support-container-items-new-form-input">
+                                <input type="text" placeholder="Тема обращения">
+                            </div>
+                            <textarea rows="10" placeholder="Текст обращения"></textarea>
+                            <div class="section-support-container-items-new-form-bottom">
+                                <button>Прикрепить фото</button>
+                                <span>screenshot4123.jpeg</span>
+                                <input type="submit" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-support-container">
+                <h3 class="section-support-container-title">Ваши заявки</h3>
+                <div class="section-support-container-items">
+                    <div class="section-support-container-items-content">
+                        <div class="section-support-container-items-content-item">
+                            <div class="section-support-container-items-content-item-count">
+                                <h4>№4236432345</h4>
+                                <p>12.06.2019</p>
+                            </div>
+                            <div class="section-support-container-items-content-item-text">
+                                <h4>Не получилось сменить тариф</h4>
+                                <p>Добрый день. Пытаюсь сменить тариф, но почему-то не получается…</p>
+                            </div>
+                            <div class="section-support-container-items-content-item-state">
+                                <span>+1</span>
+                            </div>
+                        </div>
+                        <div class="section-support-container-items-content-item">
+                            <div class="section-support-container-items-content-item-count">
+                                <h4>№4236432345</h4>
+                                <p>12.06.2019</p>
+                            </div>
+                            <div class="section-support-container-items-content-item-text">
+                                <h4>Не получилось сменить тариф</h4>
+                                <p>Добрый день. Пытаюсь сменить тариф, но почему-то не получается…</p>
+                            </div>
+                            <div class="section-support-container-items-content-item-state">
+                                <div class="section-support-container-items-content-item-state-option">
+                                    <p>Ожидается…</p>
+                                    <svg class="spinner" viewBox="0 0 50 50">
+                                        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                                    </svg>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="section-support-container-items-content-item">
+                            <div class="section-support-container-items-content-item-count">
+                                <h4>№4236432345</h4>
+                                <p>12.06.2019</p>
+                            </div>
+                            <div class="section-support-container-items-content-item-text">
+                                <h4>Не получилось сменить тариф</h4>
+                                <p>Добрый день. Пытаюсь сменить тариф, но почему-то не получается…</p>
+                            </div>
+                            <div class="section-support-container-items-content-item-state">
+                                <div class="section-support-container-items-content-item-state-option">
+                                    <p>Тема закрыта</p>
+                                    <img src="dist/img/support-closed.svg" alt="Закрыта">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
