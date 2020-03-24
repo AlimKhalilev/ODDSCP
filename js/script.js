@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $(".ripple_button").click(drawRipple);
+
     $("#copy_text").click(function() {
         var $temp = $("<input>");
 	    $("body").append($temp);

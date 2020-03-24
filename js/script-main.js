@@ -11,6 +11,16 @@ $(function() {
             max: 12
         });
     }
+
+    var elem = $(".bg_wave").css("background-position-y");
+
+    $(window).scroll(function() {
+        if ($("section").is(".bg_wave")) {
+            var scrollTop = $(window).scrollTop();
+            var pos = String(Number(elem.substr(0, elem.length - 2)) + scrollTop) + "px";
+            $(".bg_wave").css("background-position", "50% " + pos);
+        }
+    });
 });
 
 $(".auth, .reg, .reset, .fact, .rate, .rate_success, .rate_error, .bk").on("click",function(event){

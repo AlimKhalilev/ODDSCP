@@ -7,7 +7,7 @@
 @import "header";
 @import "footer";
 
-// === Support ===
+// === Support Message ===
 
 .section-support {
     min-height: 900px;
@@ -17,11 +17,119 @@
 
     }
 
+    &-link {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.23px;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        padding-left: 15px;
+
+        &::before {
+            content: '';
+            background-image: url(/dist/img/support-back.svg);
+            position: absolute;
+            left: 0;
+            width: 10px;
+            height: 7px;
+            top: 7px;
+        }
+    }
+
     &-header {
         font-size: 50px;
         font-weight: 700;
         letter-spacing: 1.75px;
-        margin-bottom: 90px;
+        margin: 30px 0 70px 0;
+    }
+
+    &-chat {
+        background-color: #2f303f;
+        border-radius: 10px;
+        padding: 40px;
+
+        &-header {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #434452;
+
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+                letter-spacing: 0.33px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+        &-content {
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 80%;
+
+                span {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #97979f;
+                    letter-spacing: -0.82px;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: -0.99px;
+
+                    border-radius: 10px;
+                    background-color: #292e3c;
+                    padding: 15px 40px 15px 25px;
+                    margin-top: 15px;
+                    line-height: 35px;
+                    position: relative;
+
+                    &.sent::after, &.read::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 8px;
+                        right: 8px;
+                    }
+
+                    &.sent::after {
+                        background-image: url(/dist/img/support-sent.svg);
+                        width: 14px;
+                        height: 11px;
+                    }
+
+                    &.read::after {
+                        background-image: url(/dist/img/support-read.svg);
+                        width: 19px;
+                        height: 11px;
+                    }
+
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+
+                &.even {
+                    align-items: flex-end;
+                    margin-left: auto;
+                    
+                    p {
+                        background-color: #343c4c;
+                    }
+                }
+            }
+        }
     }
 
     &-container {
@@ -141,111 +249,8 @@
                 }
             }
 
-            &-content {
-
-                &-item {
-                    padding: 30px 40px;
-                    background-color: #2f303f;
-                    border-radius: 10px;
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-                    color: #fff;
-
-                    &:not(:last-child) {
-                        margin-bottom: 10px;
-                    }
-
-                    &-count, &-text {
-                        h4 {
-                            font-size: 21px;
-                            padding-bottom: 8px;
-                            font-weight: 500;
-                        }
-
-                        p {
-                            font-size: 18px;
-                            color: #97979f;
-                            padding-top: 8px;
-                            font-weight: 500;
-                        }
-                    }
-
-                    &-count {
-                        width: 200px;
-                    }
-
-                    &-text {
-                        margin-right: auto;
-
-                        h4 {
-                            color: #fc8b2b;
-                        }
-                    }
-
-                    &-state {
-                        span {
-                            height: 45px;
-                            width: 45px;
-                            border-radius: 50%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            font-size: 25px;
-                            font-weight: 700;
-                            background-color: #fc8b2b;
-                        }
-
-                        &-option {
-                            display: flex;
-                            align-items: center;
-
-                            p {
-                                font-size: 18px;
-                                font-weight: 500;
-                                color: #97979f;
-                                margin-right: 15px;
-                            }
-
-                            .spinner {
-                                animation: rotate 2s linear infinite;
-                                width: 50px;
-                                height: 50px;
-                                
-                                & .path {
-                                  stroke: #6d6e78;
-                                  stroke-linecap: round;
-                                  animation: dash 1.5s ease-in-out infinite;
-                                }
-                                
-                            }
-                              
-                            @keyframes rotate {
-                                100% {
-                                  transform: rotate(360deg);
-                                }
-                            }
-                              
-                            @keyframes dash {
-                                0% {
-                                  stroke-dasharray: 1, 150;
-                                  stroke-dashoffset: 0;
-                                }
-                                50% {
-                                  stroke-dasharray: 90, 150;
-                                  stroke-dashoffset: -35;
-                                }
-                                100% {
-                                  stroke-dasharray: 90, 150;
-                                  stroke-dashoffset: -124;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }
 
-// === / Support ===
+// === / Support Message ===

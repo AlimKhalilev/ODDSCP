@@ -1,7 +1,7 @@
-$('.section-faq-container-items-item-top > img').click(function () {
-    var comments = $(this).parent().next();
-    var title = $(this).parent().parent();
-    var icon = $(this);
+$('.section-faq-container-items-item').click(function () {
+    var comments = $(this).children(":last");
+    var title = $(this);
+    var icon = $(this).children(":first").children(":last");
 
     if (!comments.is(':visible')) {
         comments.slideDown('normal', function () {

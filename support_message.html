@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ODDSCP | Frontend</title>
-	<link rel="stylesheet" href="dist/css/style-404.min.css">
+	<link rel="stylesheet" href="dist/css/style-support_message.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 
-	<header class="section-outer section-header">
+	<header class="section-outer section-header bg_wave">
 		<div class="section-inner">
 			<div class="section-header-logo">
 				<a href="/">
@@ -37,12 +37,58 @@
 		</div>
     </header>
     
-    <section class="section-outer section-404 bg_wave">
+    <section class="section-outer section-support bg_wave">
         <div class="section-inner">
-            <img src="dist/img/404.svg" alt="404 изображение">
-            <h1>Страница не найдена</h1>
-            <h2>но за это время мы нашли 1 529 событий. Заработайте на этом</h2>
-            <a href="/">Вернуться на сайт</a>
+            <a href="/support.html" class="section-support-link">Все обращения</a>
+            <h1 class="section-support-header">Техническая поддержка</h1>
+
+            <div class="section-support-chat">
+                <div class="section-support-chat-header">
+                    <h3>Не получилось сменить тариф</h3>
+                    <p>№4236432345</p>
+                </div>
+                <div class="section-support-chat-content">
+
+                    <div class="section-support-chat-content-item">
+                        <span>Агент поддержки, 12.06.2019 16:43</span>
+                        <p>Здравствуйте! Чем можем помочь?</p>
+                    </div>
+
+                    <div class="section-support-chat-content-item even">
+                        <span>Вы, 12.06.2019 16:51</span>
+                        <p class="sent">Добрый день! Авторизуюсь на сайта через браузер Opera…</p>
+                    </div>
+
+                    <div class="section-support-chat-content-item">
+                        <span>Агент поддержки, 12.06.2019 17:03</span>
+                        <p>Расскажите и проблеме подробнее.</p>
+                    </div>
+
+                    <div class="section-support-chat-content-item even">
+                        <span>Агент поддержки, 12.06.2019 17:03</span>
+                        <p class="read">Добрый день! Когда авторизуюсь на сайта через браузер Opera у меня показывает только верхнее меню и белый экран. 
+                            Больше ничего не вижу. 
+                            Обновление страницы не помогает. В других браузерах все работает корректно. Прикрепляю скриншот. Спасибо!</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section-support-container">
+                <div class="section-support-container-items">
+                    <div class="section-support-container-items-new">
+                        <form action="" class="section-support-container-items-new-form">
+                            <textarea rows="4" placeholder="Текст обращения"></textarea>
+                            <div class="section-support-container-items-new-form-bottom">
+                                <button>Прикрепить фото</button>
+                                <span>screenshot4123.jpeg</span>
+                                <input type="submit" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

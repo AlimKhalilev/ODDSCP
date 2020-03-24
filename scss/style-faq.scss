@@ -10,14 +10,7 @@
 // === FAQ ===
 
 .section-faq {
-    background-color: $color_bg_dark;
-    background-image: url(/dist/img/promo_background-1.svg);
     min-height: 900px;
-    background-position: 50% -350px;
-    background-size: 110%;
-    background-repeat: no-repeat;
-
-    color: #fff;
     padding: 80px 0;
 
     .section-inner {
@@ -64,6 +57,7 @@
                 background-color: $color_faq_item_close;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
+                cursor: pointer;
 
                 &:not(:last-child) {
                     margin-bottom: 10px;
@@ -84,7 +78,6 @@
                     }
 
                     img {
-                        cursor: pointer;
                         transition: 0.3s ease-in-out;
                     }
                 }
