@@ -73,6 +73,10 @@ body {
     @media ($media_xl) {
         font-size: 20px;
     }
+
+    @media ($media_sm) {
+        font-size: 18px;
+    }
 }
 
 .mt-20 {
@@ -229,6 +233,10 @@ body {
 
     @media ($media_xl) {
         background-position: 50% -410px;
+    }
+
+    @media ($media_sm) {
+        background-position: 50% -500px;
     }
 }
 

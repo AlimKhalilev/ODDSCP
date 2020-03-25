@@ -13,6 +13,11 @@
         display: flex;
         align-items: center;
 
+        @media ($media_sm) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         &-logo {
 
         }
@@ -20,12 +25,24 @@
         &-nav {
             margin: 0 auto 0 90px;
 
+            @media ($media_sm) {
+                margin: 45px 0;
+            }
+
             ul {
                 display: flex;
+
+                @media ($media_sm) {
+                    flex-direction: column;
+                }
 
                 li {
                     &:not(:last-child) {
                         margin-right: 40px;
+
+                        @media ($media_sm) {
+                            margin-bottom: 30px;
+                        }
                     }
 
                     a {
@@ -59,14 +76,23 @@
 
         ul {
             display: flex;
+            
+            @media ($media_sm) {
+                flex-direction: column;
+            }
 
             li {
                 &:not(:last-child) {
                     margin-right: 40px;
+
+                    @media ($media_sm) {
+                        margin-bottom: 30px;
+                    }
                 }
 
                 a {
                     font-size: 17px;
+                    line-height: 25px;
                     font-weight: 500;
                     color: #fff;
                 }

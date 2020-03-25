@@ -1,6 +1,11 @@
 // === Main js ===
 
 $(function() {
+    var button = $(".close_button");
+    var overlay = $(".overlay");
+    var navbar = $(".section-header-container");
+    var body = $("body");
+
     $('.select_language').selectric();
 
     if ($("div").is("#slider-range-min")) {
@@ -11,6 +16,23 @@ $(function() {
             max: 12
         });
     }
+
+    $(button).click(function () {
+    
+        if (!navbar.is(':visible')) {
+            navbar.slideDown('normal');
+            navbar.css("display", "flex");
+            body.css("overflow-y", "hidden");
+            overlay.css("visibility", "visible");
+            overlay.css("opacity", "0.5");
+        } 
+        else {
+            navbar.slideUp('normal');
+            body.css("overflow-y", "");
+            overlay.css("visibility", "");
+            overlay.css("opacity", "");
+        }
+    });
 
     // var elem = $(".bg_wave").css("background-position-y");
 
