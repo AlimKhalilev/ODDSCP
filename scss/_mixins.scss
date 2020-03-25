@@ -222,13 +222,13 @@ body {
 .bg_wave {
     background-color: $color_bg_dark;
     background-image: url(/dist/img/promo_background-1.svg);
-    background-position: 50% -350px;
-    background-size: 110%;
+    background-attachment: fixed;
+    background-position: 50% -320px;
     background-repeat: no-repeat;
     color: #fff;
 
     @media ($media_xl) {
-        background-position: 50% -330px;
+        background-position: 50% -410px;
     }
 }
 

@@ -11,14 +11,14 @@
 
 .section-promo {
     background-image: url(/dist/img/promo_background-1.svg);
-    min-height: 900px;
-    background-position: 50% -150px;
-    background-size: 110%;
+    height: 1050px;
+    background-position: 50% -180px;
     background-repeat: no-repeat;
     background-color: $color_bg_dark;
 
     @media ($media_xl) {
-        min-height: 800px;
+        background-position: 50% -400px;
+        height: 800px;
     }
 
     .section-inner {
