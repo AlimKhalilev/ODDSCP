@@ -24,7 +24,7 @@ $(function() {
             navbar.css("display", "flex");
             body.css("overflow-y", "hidden");
             overlay.css("visibility", "visible");
-            overlay.css("opacity", "0.5");
+            overlay.css("opacity", "0.8");
         } 
         else {
             navbar.slideUp('normal');
@@ -55,6 +55,11 @@ $(".auth, .reg, .reset, .fact, .rate, .rate_success, .rate_error, .bk").on("clic
     if ($(window).width() <= '1600') {
         $(".modal-" + this.classList[0]).css("top", "50px");
     }
+    if ($(window).width() <= '600') { // открытие модали на мобиле
+        $(".modal-" + this.classList[0]).css("top", "50px");
+        $("body").css("overflow-y", "");
+        overlay.css("z-index", "14");
+    }
     else {
         $(".modal-" + this.classList[0]).css("top", "150px");
     }
@@ -68,19 +73,23 @@ $(".overlay, .modal-form-title > img, .modal-fact > div > button, .modal-rate_su
 
     if ($('.close_button > input').prop('checked')) { // открыта шторка
 
-        if (overlay.attr("name") != "" || overlay.attr("name") != undefined) { // открыта и шторка и модаль
-            $(".modal-" + $('.overlay').attr('name')).css("top", "");
+        if (overlay.attr("name") == "" || overlay.attr("name") == undefined) { // открыта только шторка
+            $('.close_button').click();
+            $('.close_button > input').prop('checked', false);
         }
-
-        $('.close_button').click();
-        $('.close_button > input').prop('checked', false);
+        else { // открыта и шторка и модаль
+            $(".modal-" + $('.overlay').attr('name')).css("top", "");
+            overlay.css("z-index", "");
+            overlay.attr('name', "");
+            return false;
+        }
 
     }
     else { // открыта модаль
         $(".modal-" + $('.overlay').attr('name')).css("top", "");
     }
 
-    body.css("overflow-y", "");
+    overlay.css("z-index", "");
     overlay.css("visibility", "");
     overlay.css("opacity", "");
     overlay.attr('name', "");

@@ -12,7 +12,7 @@
 
     @media ($media_sm) {
         position: relative;
-        z-index: 4;
+        z-index: 13;
         height: auto;
         border: none;
     }
@@ -133,6 +133,11 @@
             padding: 0 5% 25px 5%;
             max-height: 375px;
             display: none;
+
+            position: absolute; // ЧТОБЫ БЛОК НЕ СЪЕЗЖАЛ ВМЕСТЕ С ПАНЕЛЬЮ
+            top: 80px;
+            background-color: $color_bg_light;
+            height: 375px;
 
             nav ~ div {
                 height: 50px;
