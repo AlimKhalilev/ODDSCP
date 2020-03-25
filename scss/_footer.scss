@@ -69,6 +69,14 @@
                 }
             }
         }
+
+        &-language {
+            .selectric .label {
+                @media ($media_sm) {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 
     &-links {

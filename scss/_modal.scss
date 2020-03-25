@@ -34,6 +34,10 @@
             padding: 30px 40px;
         }
 
+        @media ($media_sm) {
+            width: 90%;
+        }
+
         &-title {
             margin-bottom: 60px;
             text-align: center;
