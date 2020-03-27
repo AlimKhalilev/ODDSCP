@@ -15,6 +15,10 @@
     background-color: $color_bg_light;
     padding: 40px 0 90px 0;
 
+    @media ($media_sm) {
+        padding: 40px 0;
+    }
+
     .section-inner {
         
     }
@@ -31,6 +35,12 @@
                 display: flex;
                 align-items: center;
                 height: 130px;
+
+                @media ($media_sm) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    height: 180px;
+                }
 
                 li {
                     height: 100%;
@@ -82,8 +92,16 @@
                 text-decoration: none;
                 color: #92959b;
 
+                @media ($media_sm) {
+                    font-size: 18px;
+                }
+
                 img {
                     margin-right: 10px;
+
+                    @media ($media_sm) {
+                        width: 20px;
+                    }
                 }
             }
         }
@@ -98,6 +116,12 @@
             padding: 35px 25px;
             color: #fff;
             font-size: 21px;
+
+            @media ($media_sm) {
+                align-items: flex-start;
+                font-size: 18px;
+                line-height: 25px;
+            }
 
             form {
                 input[type="email"], input[type="password"], input[type="text"] {
@@ -137,6 +161,10 @@
                     text-align: center;
                     border: none;
                     border-radius: 8px;
+
+                    @media ($media_sm) {
+                        width: 45%;
+                    }
                 }
 
                 input[type="submit"] {
@@ -205,6 +233,10 @@
         &-rate {
             display: flex;
 
+            @media ($media_sm) {
+                flex-direction: column;
+            }
+
             p {
                 b {
                     margin-right: 10px;
@@ -220,6 +252,10 @@
                 border-bottom: 1px solid;
                 padding: 0 0 3px 0;
                 cursor: pointer;
+
+                @media ($media_sm) {
+                    margin: 20px 0 0 0;
+                }
             }
         }
 
@@ -229,6 +265,11 @@
             &-top {
                 display: flex;
                 align-items: center;
+
+                @media ($media_sm) {
+                    flex-direction: column;
+                    align-items: center;
+                }
 
                 button {
                     border-radius: 9px;
@@ -249,6 +290,10 @@
                         width: 20px;
                         height: 22px;
                     }
+
+                    @media ($media_sm) {
+                        margin: 20px 0 0 0;
+                    }
                 }
             }
 
@@ -265,6 +310,10 @@
                     text-align: center;
                     font-weight: 700;
                     letter-spacing: 0.27px;
+
+                    @media ($media_sm) {
+                        padding: 30px;
+                    }
                 }
 
                 div[aria-label="percent"] { // ширина указывается в html
@@ -280,10 +329,21 @@
                 justify-content: space-between;
                 font-size: 19px;
 
+                @media ($media_sm) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
                 a {
                     color: #fff;
                     border-bottom: 1px solid;
                     text-decoration: none;
+
+                    @media ($media_sm) {
+                        margin-top: 20px;
+                        border: none;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -295,8 +355,16 @@
                 align-items: center;
                 margin-bottom: 30px;
 
+                @media ($media_sm) {
+                    flex-direction: column;
+                }
+
                 h2 {
                     font-size: 21px;
+
+                    @media ($media_sm) {
+                        margin-bottom: 30px;
+                    }
                 }
 
                 button {
@@ -317,6 +385,11 @@
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 row-gap: 40px;
                 margin: 50px 0;
+
+                @media ($media_sm) {
+                    grid-template-columns: 1fr;
+                    margin: 40px 0;
+                }
 
                 &-item {
 
@@ -388,9 +461,18 @@
                 justify-content: space-between;
                 align-items: center;
 
+                @media ($media_sm) {
+                    flex-direction: column;
+                }
+
                 &-left {
                     display: flex;
                     align-items: center;
+                    margin-bottom: 20px;
+
+                    @media ($media_sm) {
+                        flex-direction: column;
+                    }
 
                     button {
                         background-color: #ff8300;
@@ -403,6 +485,10 @@
                         border: none;
                         border-radius: 8px;
                         margin-right: 20px;
+
+                        @media ($media_sm) {
+                            margin: 0 0 20px 0;
+                        }
                     }
                 }
 

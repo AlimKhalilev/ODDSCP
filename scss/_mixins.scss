@@ -9,6 +9,10 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 60px 85px 85px 85px;
+    
+    @media ($media_sm) {
+        overflow-x: scroll;
+    }
 
     &_item {
         color: #878889;
@@ -160,6 +164,11 @@ body {
         display: flex;
         padding: 18px 40px 18px 18px;
 
+        @media ($media_sm) {
+            padding: 15px;
+            align-items: center;
+        }
+
         &-button {
             button {
                 border: none;
@@ -176,6 +185,11 @@ body {
                 &:hover {
                     background-color: #e47f26;
                 }
+
+                @media ($media_sm) {
+                    font-size: 18px;
+                    padding: 20px 15px;
+                }
             }
         }
 
@@ -187,6 +201,10 @@ body {
                 line-height: 45px;
                 color: #323334;
 
+                @media ($media_sm) {
+                    font-size: 26px;
+                }
+
                 span {
                     color: #656667;
                 }
@@ -196,7 +214,11 @@ body {
                 color: #656667;
                 font-size: 17px;
                 font-weight: 500;
-                line-height: 15px
+                line-height: 15px;
+
+                @media ($media_sm) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -220,6 +242,11 @@ body {
 
     @media ($media_xl) {
         font-size: 50px;
+    }
+
+    @media ($media_sm) {
+        font-size: 40px;
+        line-height: 50px;
     }
 }
 

@@ -57,7 +57,6 @@ $(".auth, .reg, .reset, .fact, .rate, .rate_success, .rate_error, .bk").on("clic
     }
     if ($(window).width() <= '600') { // открытие модали на мобиле
         $(".modal-" + this.classList[0]).css("top", "50px");
-        $("body").css("overflow-y", "");
         overlay.css("z-index", "14");
     }
     else {
@@ -86,6 +85,7 @@ $(".overlay, .modal-form-title > img, .modal-fact > div > button, .modal-rate_su
 
     }
     else { // открыта модаль
+        body.css("overflow-y", "");
         $(".modal-" + $('.overlay').attr('name')).css("top", "");
     }
 

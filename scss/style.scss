@@ -44,6 +44,11 @@
                 @media ($media_xl) {
                     font-size: 56px;
                 }
+
+                @media ($media_sm) {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
             }
 
             h2 {
@@ -91,6 +96,10 @@
                 max-width: 100%;
             } 
         }
+
+        @media ($media_sm) {
+            display: none;
+        }
     }
 }
 
@@ -107,16 +116,28 @@
         @media ($media_xl) {
             padding: 30px 0 140px 0;
         }
+
+        @media ($media_sm) {
+            padding: 80px 0;
+        }
     }
 
     &-header {
         margin-bottom: 100px;
+
+        @media ($media_sm) {
+            margin-bottom: 50px;
+        }
     }
 
     &-cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 60px 30px;
+
+        @media ($media_sm) {
+            grid-template-columns: 1fr;
+        }
 
         &-card {
             border-radius: 9px;
@@ -127,6 +148,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @media ($media_sm) {
+                min-height: 360px;
+            }
 
             &:hover {
                 box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
@@ -221,6 +246,10 @@
                 max-width: 100%;
             }
         }
+
+        @media ($media_sm) {
+            display: none;
+        }
     }
 
     &-content {
@@ -234,10 +263,19 @@
             flex-basis: 78%;
         }
 
+        @media ($media_sm) {
+            width: 100%;
+            margin: 0;
+        }
+
         &-top {
 
             &-header {
                 text-align: left;
+
+                @media ($media_sm) {
+                    overflow-wrap: break-word;
+                }
             }
 
             &-items {
@@ -252,7 +290,9 @@
                     align-items: center;
 
                     img {
-                        
+                        @media ($media_sm) {
+                            width: 30px;
+                        }
                     }
 
                     h3 {
@@ -265,6 +305,11 @@
                         @media ($media_xl) {
                             font-size: 25px;
                             line-height: 35px;
+                        }
+
+                        @media ($media_sm) {
+                            font-size: 20px;
+                            line-height: 25px;
                         }
                     }
 
@@ -286,6 +331,12 @@
                     font-size: 22px;
                     line-height: 30px;
                 }
+
+                @media ($media_sm) {
+                    font-size: 17px;
+                    line-height: 27px;
+                    margin: 30px 0;
+                }
             }
         }
 
@@ -303,6 +354,10 @@
                     font-size: 18px;
                     margin-bottom: 20px;
                     line-height: 25px;
+                }
+
+                @media ($media_sm) {
+                    font-size: 17px;
                 }
             }
         }
@@ -326,6 +381,14 @@
         color: #fff;
         margin: 30px 0 90px 0;
 
+        @media ($media_sm) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            grid-gap: 15px;
+            margin: 30px 0;
+        }
+
         &-item {
             font-size: 21px;
             font-weight: 700;
@@ -346,6 +409,10 @@
 
             &:not(:last-child) {
                 margin-right: 30px;
+
+                @media ($media_sm) {
+                    margin: 0;
+                }
             }
         }
     }
@@ -354,6 +421,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 30px 30px;
+
+        @media ($media_sm) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
 
         &-img {
             img {
@@ -369,6 +441,10 @@
     &-button {
         margin-top: 90px;
         text-align: center;
+
+        @media ($media_sm) {
+            margin-top: 30px;
+        }
 
         button {
             border: 1px solid #fff;
@@ -410,6 +486,14 @@
         flex-wrap: wrap;
         align-items: flex-end;
 
+        @media ($media_sm) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 30px;
+            grid-gap: 10px;
+            align-items: stretch;
+        }
+
         &-item {
             background-color: $color_sport_items;
             display: flex;
@@ -418,24 +502,52 @@
             border-radius: 12px;
             height: 95px;
 
+            @media ($media_sm) {
+                height: auto;
+                padding: 20px 15px;
+            }
+
+            img {
+                @media ($media_sm) {
+                    max-width: 30px;
+                }
+            }
+
             p {
                 font-size: 22px;
                 font-weight: 500;
                 color: #fff;
                 margin-left: 15px;
+
+                @media ($media_sm) {
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
             }
 
             &:not(:last-child) {
                 margin-right: 20px;
+
+                @media ($media_sm) {
+                    margin: 0;
+                }
             }
 
             &:last-child {
                 margin-top: 20px;
+
+                @media ($media_sm) {
+                    margin: 0;
+                }
             }
 
             @media ($media_xl) {
                 &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
                     margin-bottom: 20px;
+
+                    @media ($media_sm) {
+                        margin: 0;
+                    }
                 }
             }
 
@@ -457,6 +569,10 @@
 
     &-table {
         margin-top: 120px;
+
+        @media ($media_sm) {
+            margin-top: 30px;
+        }
     }
 }
 
@@ -467,6 +583,10 @@
 .section-integration {
     background-color: $color_bg_light_two;
     padding: 100px 0 140px 0;
+
+    @media ($media_sm) {
+        padding: 50px 0;
+    }
 
     .section-inner {
 
@@ -482,17 +602,30 @@
         @media ($media_xl) {
             font-size: 30px;
         }
+
+        @media ($media_sm) {
+            font-size: 24px;
+            line-height: 30px;
+        }
     }
 
     &-content, &-bottom {
         width: 1050px;
         margin: 0 auto;
+
+        @media ($media_sm) {
+            width: 100%;
+        }
     }
 
     &-content {
 
         &-tabs {
             padding: 0 60px;
+
+            @media ($media_sm) {
+                padding: 0;
+            }
 
             span {
                 position: relative;
@@ -502,8 +635,16 @@
                 letter-spacing: 0.77px;
                 cursor: pointer;
 
+                @media ($media_sm) {
+                    font-size: 18px;
+                }
+
                 &:not(:last-child) {
                     margin-right: 50px;
+
+                    @media ($media_sm) {
+                        margin-right: 15px;
+                    }
                 }
 
                 &:hover {
@@ -535,6 +676,12 @@
             display: flex;
             justify-content: space-between;
 
+            @media ($media_sm) {
+                flex-direction: column;
+                align-items: center;
+                padding: 15px 20px;
+            }
+
             &-text {
                 pre {
                     font-family: 'Montserrat', sans-serif;
@@ -544,6 +691,12 @@
                     letter-spacing: 0.63px;
                     line-height: 30px;
                     margin: 0;
+
+                    @media ($media_sm) {
+                        font-size: 14px;
+                        letter-spacing: 0.2px;
+                        margin-bottom: 25px;
+                    }
                 }
             }
 
@@ -604,6 +757,10 @@
         padding: 150px 0 200px 0;
     }
 
+    @media ($media_sm) {
+        padding: 50px 0;
+    }
+
     .section-inner {
 
     }
@@ -639,12 +796,23 @@
                 @media ($media_xl) {
                     font-size: 180px;
                 }
+
+                @media ($media_sm) {
+                    margin: 0 15px 0 0;
+                    font-size: 68px;
+                }
                 
             }
 
             @media ($media_xl) {
                 img {
                     width: 120px;
+                }
+            }
+
+            @media ($media_sm) {
+                img {
+                    width: 55px;
                 }
             }
         }
@@ -658,10 +826,11 @@
 
             @media ($media_xl) {
                 margin-top: 30px;
+                font-size: 50px;
             }
 
-            @media ($media_xl) {
-                font-size: 50px;
+            @media ($media_sm) {
+                font-size: 30px;
             }
         }
 
