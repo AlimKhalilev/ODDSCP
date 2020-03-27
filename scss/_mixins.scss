@@ -265,6 +265,10 @@ body {
     @media ($media_sm) {
         background-position: 50% -500px;
     }
+
+    @media (min-width: 1921px) {
+        background-image: none;
+    }
 }
 
 // === / Mixins ===

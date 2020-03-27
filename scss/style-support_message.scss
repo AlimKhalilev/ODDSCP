@@ -27,7 +27,7 @@
         color: #fff;
         text-decoration: none;
         position: relative;
-        padding-left: 15px;
+        padding-left: 22px;
 
         &::before {
             content: '';
@@ -37,6 +37,7 @@
             width: 10px;
             height: 7px;
             top: 7px;
+            transform: scale(1.6);
         }
     }
 

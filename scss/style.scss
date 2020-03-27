@@ -16,10 +16,15 @@
     background-repeat: no-repeat;
     background-color: $color_bg_dark;
 
-    @media ($media_xl) {
-        background-position: 50% -400px;
-        height: 800px;
+    @media (min-width: 1921px) {
+        background-color: $color_bg_light;
+        background-image: none;
     }
+
+    // @media ($media_xl) {
+    //     background-position: 50% -400px;
+    //     height: 800px;
+    // }
 
     .section-inner {
         display: flex;
