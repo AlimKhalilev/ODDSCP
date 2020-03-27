@@ -153,6 +153,7 @@
             }
 
             @media ($media_sm) {
+                height: auto;
                 margin: 0;
                 width: 100%;
                 margin-bottom: 20px;
@@ -163,6 +164,7 @@
                 display: flex;
 
                 @media ($media_sm) {
+                    height: auto;
                     flex-direction: column;
                 }
     
@@ -174,6 +176,10 @@
     
                         @media ($media_xl) {
                             margin-right: 25px;
+                        }
+                        
+                        @media ($media_sm) {
+                            margin-right: 0;
                         }
                     }
 
@@ -244,6 +250,8 @@
 
             @media ($media_sm) {
                 margin-left: auto;
+                border: none;
+                padding: 0;
             }
     
             img {

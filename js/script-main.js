@@ -44,6 +44,18 @@ $(function() {
     //     }
     // });
 
+    $(".modal-form").scroll(function() {
+        var myScroll = $(this).scrollTop();
+        var img = "";
+        if (this.classList[1] == "modal-rate") { // большая модаль
+            img = ".modal-rate > .modal-top > .modal-form-title > img";
+        }
+        else {
+            img = "." + this.classList[1] + " > .modal-form-title > img";
+        }
+        $(img).css("top", myScroll + "px");
+    });
+
 });
 
 $(".auth, .reg, .reset, .fact, .rate, .rate_success, .rate_error, .bk").on("click",function(event){
