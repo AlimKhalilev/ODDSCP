@@ -35,7 +35,12 @@
                 display: flex;
                 align-items: center;
 
+                @media ($media_xl) {
+                    height: 100px;
+                }
+
                 @media ($media_sm) {
+                    height: auto;
                     flex-direction: column;
                     align-items: flex-start;
                 }
